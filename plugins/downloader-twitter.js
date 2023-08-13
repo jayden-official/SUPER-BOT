@@ -3,7 +3,7 @@ import axios from 'axios'
 import cheerio from 'cheerio'
 import vm from 'node:vm'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝚃𝚆𝙸𝚃𝚃𝙴𝚁, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command}* https://twitter.com/auronplay/status/1586487664274206720?s=20&t=3snvkvwGUIez5iWYQAehpw` 
+if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] INPUT A TWITTER LINK, EXAMPLE: ${usedPrefix + command}* https://twitter.com/auronplay/status/1586487664274206720?s=20&t=3snvkvwGUIez5iWYQAehpw` 
 try {
 let res = await twitterDl(text)
 await m.reply(global.wait)
@@ -15,7 +15,7 @@ try {
 const AA = await savefrom(text)    
 conn.sendFile(m.chat, AA.url[0].url, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)    
 } catch {
-throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*'  
+throw '*[❗𝐈𝐍𝐅𝐎❗]ERROR, PLEASE TRY AGAIN *'  
 }}}
 handler.command = /^((twdl|tw|twt|twitter)(dl)?)$/i
 export default handler
