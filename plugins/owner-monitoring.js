@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 const MONITOR_API_KEY = 'ur2053487-78a328de9f7f94724bd3ba5f' // Enter your uptimerobot APIKEY here ===== https://uptimerobot.com/dashboard?ref=website-header#mySettings
 
 var handler = async (m, { conn }) => {
-  conn.reply(m.chat, 'Sedang memuat informasi monitor... Silahkan tunggu', m);
+  conn.reply(m.chat, '*Please wait master, I am loading your monitors...*', m);
 
   try {
     const [monitorResponse, accountResponse] = await Promise.all([
