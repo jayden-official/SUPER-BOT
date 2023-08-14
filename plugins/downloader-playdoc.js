@@ -77,9 +77,9 @@ await conn.reply(m.chat, '*[❗] ERROR COULD NOT DOWNLOAD THE VIDEO*', m)}}}
 }} catch {
 throw "*[❗𝐈𝐍𝐅𝐎❗] ERROR, TRY AGAIN LATER!!*"}
 }
-handler.help = ["play3", "play4"].map((v) => v + " < busqueda >")
+handler.help = ["docplay", "docplay2"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
-handler.command = /^play3|play4?$/i
+handler.command = /^docplay|docplay2?$/i
 export default handler
 
 async function search(query, options = {}) {
