@@ -317,12 +317,12 @@ global.reloadHandler = async function(restatConn) {
 
   conn.welcome = '*╔══════════════*\n*╟❧ @subject*\n*╠══════════════*\n*╟❧🐝@user*\n*╟❧🐝𝐖𝐄𝐋𝐂𝐎𝐌𝐄/𝙰* \n*║*\n*╟❧🐝𝐆𝐑𝐎𝐔𝐏 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:*\n\n@desc\n\n*║*\n*╟❧🐝𝐄𝐍𝐉𝐎𝐘 𝐘𝐎𝐔𝐑 𝐒𝐓𝐀𝐘!🐝!*\n*╚══════════════*';
   conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧🐝𝐒𝐄𝐄 𝐘𝐎𝐔 𝐒𝐎𝐎𝐍 👋🏻* \n*╚══════════════*';
-  conn.spromote = '*🐝@user HAS BEEN PROMOTED TO ADMINSHIP, ENJOY YOUR RANKING FHAM🥂*';
-  conn.sdemote = '*🐝@user HAS BEEN DEMOTED FROM ADMINSHIP, SO SHAMFULL😢*';
- conn.sDesc = '*THE DESCRIPTION HAS BEEN MODIFIED*\n\n*NEW DESCRIPTION:* @desc'
-conn.sSubject = '*🐝GROUP NAME HAS BEEN CHANGED🐝*\n*🐝NEW NAME🐝:* @subject'
-conn.sIcon = '*🐝THE GROUP PHOTO HAS BEEN CHANGED🐝!!*'
-conn.sRevoke = '*🐝GROUP LINK HAS BEEN REVOKED🐝!!*\n*NEW LINK:* @revoke'
+  conn.spromote = 'https://github.com/Khalid-official *🐝@user HAS BEEN PROMOTED TO ADMINSHIP, ENJOY YOUR RANKING FHAM🥂*';
+  conn.sdemote = 'https://github.com/Khalid-official *🐝@user HAS BEEN DEMOTED FROM ADMINSHIP, SO SHAMFULL😢*';
+  conn.sDesc = 'https://github.com/Khalid-official *THE DESCRIPTION HAS BEEN MODIFIED*\n\n*NEW DESCRIPTION:* @desc'
+  conn.sSubject = 'https://github.com/Khalid-official *🐝GROUP NAME HAS BEEN CHANGED🐝*\n*🐝NEW NAME🐝:* @subject'
+  conn.sIcon = 'https://github.com/Khalid-official *🐝THE GROUP PHOTO HAS BEEN CHANGED🐝!!*'
+  conn.sRevoke = 'https://github.com/Khalid-official *🐝GROUP LINK HAS BEEN REVOKED🐝!!*\n*NEW LINK:* @revoke'
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn);
@@ -475,7 +475,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `🐝 ACTIVE TIME: ${uptime} ┃ 👑 𝗕𝘆 𝗸𝗵𝗮𝗹𝗶𝗱-𝗧𝗘𝗖𝗛𝗡𝗢𝗟𝗢𝗚𝗜𝗘𝗦  ┃ 🔗ᴏғᴄ: +254736858034`;
+  const bio = `🐝 𝗔𝗖𝗧𝗜𝗩𝗘 𝗧𝗜𝗠𝗘: ${uptime} ┃ 👑 𝗚𝗘𝗡© 𝗕𝘆 𝗕𝗨𝗠𝗕𝗟𝗘-𝗕𝗼𝗧  ┃ 🔗ᴏғᴄ: +254736858034`;
   await mconn.conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
@@ -483,6 +483,4 @@ function clockString(ms) {
   const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24;
   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
   const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
-  return [d, ' Day(s) ️', h, ' Hour(s) ', m, ' Minute(s) ', s, ' Second(s) '].map((v) => v.toString().padStart(2, 0)).join('');
-}
-_quickTest().catch(console.error);
+  return [d, ' Day(s) ️', h, ' Hour(s) ', m, ' Minute(s) ', s, ' Second(s) '].map((v) => v.to
