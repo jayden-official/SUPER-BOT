@@ -13,7 +13,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play4' || command == 'playdoc2') {
       additionalText = 'video 🎥';
     }
-    const texto1 = `*◉——⌈🔊 YOUTUBE DOC 🔊⌋——◉*\n
+    const texto1 = `*◉—⌈🎶🐝 𝗕𝗘𝗘 𝗠𝗨𝗦𝗜𝗖🎶⌋—◉*\n
 ❏ 📌 *𝗧𝗶𝘁𝗹𝗲:* ${yt_play[0].title}
 ❏ 📆 *𝗽𝘂𝗯𝗹𝗶𝘀𝗵𝗲𝗱:* ${yt_play[0].ago}
 ❏ ⌚ *Dur𝗮𝘁𝗶𝗼𝗻:* ${secondString(yt_play[0].duration.seconds)}
@@ -23,7 +23,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 ❏ 🆔 *ID:* ${yt_play[0].videoId}
 ❏ 🪬 *T𝘆𝗽𝗲:* ${yt_play[0].type}
 ❏ 🔗 *L𝗶𝗻𝗸:* ${yt_play[0].url}\n
-❏ *_𝘀𝗲𝗻𝗱𝗶𝗻𝗴 ${additionalText}, 𝗽𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗮𝗮 𝗺𝗼𝗺𝗲𝗻𝘁．．．_*`.trim();
+❏ *_𝘀𝗲𝗻𝗱𝗶𝗻𝗴 ${additionalText}, 𝗽𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗮 𝗺𝗼𝗺𝗲𝗻𝘁．．．_*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play3' || command == 'playdoc') {
       try {
