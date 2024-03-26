@@ -65,7 +65,7 @@ if (enviando) return;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
     if (buff) {
-      await conn.sendMessage(m.chat, {[mimeType.startsWith('audio') ? 'audio' : 'video']: buff.data, mimetype: mimeType, fileName: ikratos}, {quoted: m});
+      await conn.sendMessage(m.chat, {[mimeType.startsWith('audio') ? 'document' : 'video']: buff.data, mimetype: mimeType, fileName: ikratos}, {quoted: m});
 conn.sendMessage(m.chat, {[mimeType.startsWith('audio') ? 'audio' : 'document']: buff.data, mimetype: mimeType, fileName: ikratos}, {quoted: m});
       enviando = false;
     } else {
