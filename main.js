@@ -315,8 +315,6 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*╔══════════════*\n*╟❧ @subject*\n*╠══════════════*\n*╟❧🐝@user*\n*╟❧🐝𝐖𝐄𝐋𝐂𝐎𝐌𝐄/𝙰* \n*║*\n*╟❧🐝𝐆𝐑𝐎𝐔𝐏 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:*\n\n@desc\n\n*║*\n*╟❧🐝𝐄𝐍𝐉𝐎𝐘 𝐘𝐎𝐔𝐑 𝐒𝐓𝐀𝐘!🐝!*\n*╚══════════════*';
-  conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧🐝𝐒𝐄𝐄 𝐘𝐎𝐔 𝐒𝐎𝐎𝐍 👋🏻* \n*╚══════════════*';
   conn.spromote = 'https://github.com/Khalid-official *🐝@user HAS BEEN PROMOTED TO ADMINSHIP, ENJOY YOUR RANKING FHAM🥂*';
   conn.sdemote = 'https://github.com/Khalid-official *🐝@user HAS BEEN DEMOTED FROM ADMINSHIP, SO SHAMFULL😢*';
   conn.sDesc = 'https://github.com/Khalid-official *THE DESCRIPTION HAS BEEN MODIFIED*\n\n*NEW DESCRIPTION:* @desc'
