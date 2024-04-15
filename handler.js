@@ -1427,7 +1427,7 @@ export async function participantsUpdate({id, participants, action}) {
         for (const user of participants) {
           let pp = '';
           try {
-            pp = await m.conn.profilePictureUrl(user, 'image');
+            pp = await m.conn.profilePictureUrl(user, '');
           } catch (e) {
           } finally {
             const apii = await m.conn.getFile(pp);
