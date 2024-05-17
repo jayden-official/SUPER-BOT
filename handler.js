@@ -944,7 +944,7 @@ export async function handler(chatUpdate) {
         if (!('autosticker' in chat)) chat.autosticker = false;
         if (!('audios' in chat)) chat.audios = false;
         if (!('antiLink' in chat)) chat.antiLink = false;
-        if (!('antiLink2' in chat)) chat.antiLink2 = true;
+        if (!('antiLink2' in chat)) chat.antiLink2 = false;
         if (!('antiviewonce' in chat)) chat.antiviewonce = false;
         if (!('antiToxic' in chat)) chat.antiToxic = false;
         if (!('antiTraba' in chat)) chat.antiTraba = false;
@@ -969,7 +969,7 @@ export async function handler(chatUpdate) {
           autosticker: false,
           audios: true,
           antiLink: false,
-          antiLink2: true,
+          antiLink2: false,
           antiviewonce: false,
           antiToxic: false,
           antiTraba: false,
@@ -987,7 +987,7 @@ export async function handler(chatUpdate) {
         if (!('self' in settings)) settings.self = false;
         if (!('autoread' in settings)) settings.autoread = false;
         if (!('autoread2' in settings)) settings.autoread2 = false;
-        if (!('restrict' in settings)) settings.restrict = true;
+        if (!('restrict' in settings)) settings.restrict = false;
         if (!('antiCall' in settings)) settings.antiCall = false;
         if (!('antiPrivate' in settings)) settings.antiPrivate = false;
 	if (!('modejadibot' in settings)) settings.modejadibot = true;
@@ -999,7 +999,7 @@ export async function handler(chatUpdate) {
           self: false,
           autoread: false,
           autoread2: false,
-          restrict: true,
+          restrict: false,
           antiCall: false,
           antiPrivate: false,
 	  modejadibot: true,
