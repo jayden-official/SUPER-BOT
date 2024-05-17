@@ -944,7 +944,7 @@ export async function handler(chatUpdate) {
         if (!('autosticker' in chat)) chat.autosticker = false;
         if (!('audios' in chat)) chat.audios = false;
         if (!('antiLink' in chat)) chat.antiLink = false;
-        if (!('antiLink2' in chat)) chat.antiLink2 = false;
+        if (!('antiLink2' in chat)) chat.antiLink2 = true;
         if (!('antiviewonce' in chat)) chat.antiviewonce = false;
         if (!('antiToxic' in chat)) chat.antiToxic = false;
         if (!('antiTraba' in chat)) chat.antiTraba = false;
@@ -999,7 +999,7 @@ export async function handler(chatUpdate) {
           self: false,
           autoread: false,
           autoread2: false,
-          restrict: false,
+          restrict: true,
           antiCall: false,
           antiPrivate: false,
 	  modejadibot: true,
