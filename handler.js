@@ -969,7 +969,7 @@ export async function handler(chatUpdate) {
           autosticker: false,
           audios: true,
           antiLink: false,
-          antiLink2: false,
+          antiLink2: true,
           antiviewonce: false,
           antiToxic: false,
           antiTraba: false,
@@ -987,7 +987,7 @@ export async function handler(chatUpdate) {
         if (!('self' in settings)) settings.self = false;
         if (!('autoread' in settings)) settings.autoread = false;
         if (!('autoread2' in settings)) settings.autoread2 = false;
-        if (!('restrict' in settings)) settings.restrict = false;
+        if (!('restrict' in settings)) settings.restrict = true;
         if (!('antiCall' in settings)) settings.antiCall = false;
         if (!('antiPrivate' in settings)) settings.antiPrivate = false;
 	if (!('modejadibot' in settings)) settings.modejadibot = true;
@@ -1543,7 +1543,7 @@ global.dfail = (type, m, conn) => {
         restrict: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓  ⚠️ ] 🔐 This feature is *disabled*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '[ ⚠ ] 🐝𝗔𝗟𝗘𝗥𝗧 - 𝗔𝗟𝗘𝗥𝗧🐝', body: '🐝ᴛʜᴇ ʙᴜᴍʙʟᴇʙᴇᴇ ʙᴏᴛ🐝', thumbnail: imagen1, sourceUrl: 'https://github.com/Khalid-niccur'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '[ ⚠ ] 🐝𝗔𝗟𝗘𝗥𝗧 - 𝗔𝗟𝗘𝗥𝗧🐝', body: '🐝ᴛʜᴇ ʙᴜᴍʙʟᴇʙᴇᴇ ʙᴏᴛ🐝', thumbnail: imagen1, sourceUrl: 'https://github.com/Khalid-official'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 
