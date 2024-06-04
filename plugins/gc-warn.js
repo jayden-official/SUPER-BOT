@@ -11,7 +11,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   } else who = m.chat;
   const user = global.db.data.users[who];
   const bot = global.db.data.settings[conn.user.jid] || {};
-  const dReason = 'https://github.com/Khalid-official 😏STUPIDITY😏';
+  const dReason = ' *😏STUPIDITY😏*';
   const msgtext = text || dReason;
   const sdms = msgtext.replace(/@\d+-?\d* /g, '');
   const warntext = `https://github.com/Khalid-official *[❗] TAG A PERSON OR RESPOND TO THE MESSAGE YOU WANT THE PERSON TO BE WARNED*\n\n*—◉ EXAMPLE:*\n*${
@@ -40,7 +40,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
     await m.reply(
         `https://github.com/Khalid-official  YOU WILL NOTICE ITS VARIANCE!!\n*@${
           who.split`@`[0]
-        }*𝗬𝗢𝗨 𝗣𝗔𝗦𝗦𝗘𝗗 *3* 𝗬𝗢𝗨 𝗪𝗜𝗟𝗟 𝗕𝗘 𝗪𝗜𝗣𝗣𝗘𝗗 𝗢𝗨𝗧 𝗖𝗢𝗠𝗥𝗔𝗗𝗘 👽`,
+        }*𝗬𝗢𝗨 𝗣𝗔𝗦𝗦𝗘𝗗* *2* *𝗪𝗔𝗥𝗡𝗜𝗡𝗚𝗦, 𝗬𝗢𝗨 𝗪𝗜𝗟𝗟 𝗕𝗘 𝗪𝗜𝗣𝗣𝗘𝗗 𝗢𝗨𝗧 𝗖𝗢𝗠𝗥𝗔𝗗𝗘* 👽`,
         null,
         {mentions: [who]},
     );
