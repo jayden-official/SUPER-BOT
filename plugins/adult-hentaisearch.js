@@ -1,8 +1,8 @@
 import cheerio from 'cheerio';
 import axios from 'axios';
 const handler = async (m, {conn, text, __dirname, usedPrefix, command}) => {
-  if (!global.db.data.chats[m.chat].modohorny && m.isGroup) throw 'https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] The +18 commands are disabled in this group if you are admin and want to activate them use the command #enable horny mode*';
-  if (!text) throw 'https://github.com/Khalid-official *[❗] enter the name of some hentai to search*';
+  if (!global.db.data.chats[m.chat].modohorny && m.isGroup) throw 'https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] The +18 commands are disabled in this group if you are admin and want to activate them use the command #enable horny mode*';
+  if (!text) throw 'https://github.com/jayden-official *[❗] enter the name of some hentai to search*';
   const searchResults = await searchHentai(text);
   let teks = searchResults.result.map((v, i) => `
 ${i+1}. *_${v.title}_*
