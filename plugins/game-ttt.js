@@ -2,12 +2,12 @@ import TicTacToe from '../lib/tictactoe.js'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
      conn.game = conn.game ? conn.game : {}
-     if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `https://github.com/Khalid-official ✳️ You are still in the game to restart the session type : *${usedPrefix}delttt*`
-     if (!text) throw `https://github.com/Khalid-official ✳️ Give the room a name`
+     if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `https://github.com/jayden-official ✳️ You are still in the game to restart the session type : *${usedPrefix}delttt*`
+     if (!text) throw `https://github.com/jayden-official ✳️ Give the room a name`
      let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
      // m.reply('[WIP Feature]')
      if (room) {
-         m.reply('https://github.com/Khalid-official ✅ Partner found')
+         m.reply('https://github.com/jayden-official ✅ Partner found')
          room.o = m.chat
          room.game.playerO = m.sender
          room.state = 'PLAYING'
@@ -26,7 +26,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
                  9: '9️⃣',
              }[v]
          })
-         let str = `https://github.com/Khalid-official 
+         let str = `https://github.com/jayden-official 
 Waiting for @${room.game.currentTurn.split('@')[0]} as first player
         
 ${arr.slice(0, 3).join('')}
@@ -55,7 +55,7 @@ ${arr.slice(6).join('')}
          }
          if (text) room.name = text
         
-      conn.reply(m.chat, `https://github.com/Khalid-official ⏳ *Waiting for partner*\nEnter the following command to accept
+      conn.reply(m.chat, `https://github.com/jayden-official ⏳ *Waiting for partner*\nEnter the following command to accept
 ▢ *${usedPrefix + command} ${text}*
 
 🎁 Reward: *4999 XP*`, m, {
