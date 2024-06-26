@@ -7,8 +7,8 @@ var number = text.split`@`[1]
 var number = text
 }
 	
-if(!text && !m.quoted) return conn.reply(m.chat, `https://github.com/Khalid-official *[❗] APPROPRIATE USE *\n\n*┯┷*\n*┠≽ ${usedPrefix}admin @tag*\n*┠≽ ${usedPrefix} promote -> reply to a message*\n*┷┯*`, m )
-if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `https://github.com/Khalid-official *[ ⚠️ ] The number entered is incorrect, please enter the correct number*`, m)
+if(!text && !m.quoted) return conn.reply(m.chat, `https://github.com/jayden-official *[❗] APPROPRIATE USE *\n\n*┯┷*\n*┠≽ ${usedPrefix}admin @tag*\n*┠≽ ${usedPrefix} promote -> reply to a message*\n*┷┯*`, m )
+if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `https://github.com/jayden-official *[ ⚠️ ] The number entered is incorrect, please enter the correct number*`, m)
 	
 try {
 if(text) {
@@ -21,7 +21,7 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-conn.reply(m.chat, `https://github.com/Khalid-official *[ ✅ ] ORDERS RECEIVED*`, m)
+conn.reply(m.chat, `https://github.com/jayden-official *[ ✅ ] ORDERS RECEIVED*`, m)
 }}
 handler.help = ['*593xxx*','*@usuario*','*responder chat*'].map(v => 'promote ' + v)
 handler.tags = ['group']
