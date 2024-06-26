@@ -3,7 +3,7 @@
 let handler = async (m, { conn, text, isROwner, isOwner }) => {
    if (text) {
      global.db.data.chats[m.chat].sBye = text
-     m.reply('https://github.com/Khalid-official ✅ Goodbye message set')
+     m.reply('https://github.com/jayden-official ✅ Goodbye message set')
    } else throw `✳️ Enter the message\n@user (mention)`
 }
 handler.help = ['setbye <text>']
