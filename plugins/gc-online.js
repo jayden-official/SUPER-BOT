@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
       .map(({ jid, name }) => ({ jid, name }));
 
     if (filteredParticipants.length === 0) {
-        return conn.reply(m.chat, 'https://github.com/Khalid-official No users online at the moment.', m);
+        return conn.reply(m.chat, 'https://github.com/jayden-official No users online at the moment.', m);
     }
 
     const formattedText = filteredParticipants.map(({ jid, name }, index) => (
