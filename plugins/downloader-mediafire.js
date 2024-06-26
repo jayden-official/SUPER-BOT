@@ -4,10 +4,10 @@ import cheerio from 'cheerio';
 import {mediafiredl} from '@bochilteam/scraper';
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw `https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] ENTER A VALID MEDIAFIRE IINK, EXAMPLE: ${usedPrefix + command} https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*`;
+  if (!args[0]) throw `https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] ENTER A VALID MEDIAFIRE IINK, EXAMPLE: ${usedPrefix + command} https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*`;
   try {
     const resEX = await mediafiredl(args[0]);
-    const captionES = `https://github.com/Khalid-official 
+    const captionES = `https://github.com/jayden-official 
 *📓NAME:* ${resEX.filename}
 *📁 WEIGHT:* ${resEX.filesizeH}
 *📄 TYPE:* ${resEX.ext}
@@ -20,7 +20,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
     try {
       const res = await mediafireDl(args[0]);
       const {name, size, date, mime, link} = res;
-      const caption = `https://github.com/Khalid-official
+      const caption = `https://github.com/jayden-official
 *📓 NAME:* ${resEX.filename}
 *📁 WEIGHT:* ${resEX.filesizeH}
 *📄 TYPE:* ${resEX.ext}
@@ -30,7 +30,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
       await m.reply(caption);
       await conn.sendFile(m.chat, link, name, '', m, null, {mimetype: mime, asDocument: true});
     } catch {
-      await m.reply('https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] ERROR, PLEASE TRY AGAIN*\n\n*- ENTER A LINK SIMILAR TO THIS:*\n*◉ https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*');
+      await m.reply('https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] ERROR, PLEASE TRY AGAIN*\n\n*- ENTER A LINK SIMILAR TO THIS:*\n*◉ https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*');
     }
   }
 };
