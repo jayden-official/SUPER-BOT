@@ -1,6 +1,6 @@
 import fg from 'api-dylux'
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
-   if (!text) throw `https://github.com/Khalid-official ✳️ Enter the image you want to search for \n\n📌 Example: *${usedPrefix + command}* Billie Eilish`
+   if (!text) throw `https://github.com/jayden-official ✳️ Enter the image you want to search for \n\n📌 Example: *${usedPrefix + command}* Billie Eilish`
    let res = await fg.googleImage(text)
    conn.sendFile(m.chat, res.getRandom(), 'img.png', `
 ✅ Result of : *${text}*`.trim(), m)
