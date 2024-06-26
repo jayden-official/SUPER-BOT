@@ -8,7 +8,7 @@ let isClose = { // Switch Case Like :v
 'close': 'announcement',
 }[(args[0] || '')]
 if (isClose === undefined)
-throw `https://github.com/Khalid-official 
+throw `https://github.com/jayden-official 
 *[❗] 𝐖𝐑𝐎𝐍𝐆 𝐅𝐎𝐑𝐌𝐀𝐓!!*
 
 *┏━━━❲ ✨𝐄𝐗𝐀𝐌𝐏𝐋𝐄✨ ❳━━━┓*
@@ -16,7 +16,7 @@ throw `https://github.com/Khalid-official
 *┠┉↯ ${usedPrefix + command} close*
 `.trim()
 await conn.groupSettingUpdate(m.chat, isClose)
-{m.reply('https://github.com/Khalid-official *[ ✔ ] 𝐆𝐑𝐎𝐔𝐏 𝐂𝐎𝐍𝐅𝐈𝐆𝐔𝐑𝐄𝐃 𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐋𝐘*')}
+{m.reply('https://github.com/jayden-official *[ ✔ ] 𝐆𝐑𝐎𝐔𝐏 𝐂𝐎𝐍𝐅𝐈𝐆𝐔𝐑𝐄𝐃 𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐋𝐘*')}
 }
 handler.help = ['group open / close', 'group open / close']
 handler.tags = ['group']
