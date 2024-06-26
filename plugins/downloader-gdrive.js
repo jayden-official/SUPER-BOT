@@ -3,14 +3,14 @@ import { sizeFormatter } from 'human-readable'
 let formatSize = sizeFormatter({
 std: 'JEDEC', decimalPlaces: 2, keepTrailingZeroes: false, render: (literal, symbol) => `${literal} ${symbol}B` })
 let handler = async (m, { conn, args }) => {
-if (!args[0]) throw 'https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, please try again later*\n\n*-  enter a link similar to:*\n*◉ https://drive.google.com/file/d/1dmHlx1WTbH5yZoNa_ln325q5dxLn1QHU/view*' 
+if (!args[0]) throw 'https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, please try again later*\n\n*-  enter a link similar to:*\n*◉ https://drive.google.com/file/d/1dmHlx1WTbH5yZoNa_ln325q5dxLn1QHU/view*' 
 try {
 GDriveDl(args[0]).then(async (res) => {
-conn.reply(m.chat, 'https://github.com/Khalid-official wait a moment am processing...\n\nshipping may take a moment depending with the size of the file, remember if the file exceeds 100mb i cant load', m)
+conn.reply(m.chat, 'https://github.com/jayden-official wait a moment am processing...\n\nshipping may take a moment depending with the size of the file, remember if the file exceeds 100mb i cant load', m)
 if (!res) throw res
 conn.sendFile(m.chat, res.downloadUrl, res.fileName, '', m, null, { mimetype: res.mimetype, asDocument: true })})
 }catch(e){
-m.reply('https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, please try again later*\n\n*- enter a link similar to:*\n*◉ https://drive.google.com/file/d/1dmHlx1WTbH5yZoNa_ln325q5dxLn1QHU/view*')
+m.reply('https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, please try again later*\n\n*- enter a link similar to:*\n*◉ https://drive.google.com/file/d/1dmHlx1WTbH5yZoNa_ln325q5dxLn1QHU/view*')
 console.log(e)}}
 handler.command = /^(gdrive)$/i
 export default handler
