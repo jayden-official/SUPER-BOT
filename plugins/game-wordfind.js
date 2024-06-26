@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command}) => {
 
 if (!userSP) {
 userSP = m.sender.split("@")[0]
-await conn.reply(m.chat, `https://github.com/Khalid-official *@${m.sender.split("@")[0]} REGISTERED IN THE GAME* ✅`, m, { mentions: [m.sender] })
+await conn.reply(m.chat, `https://github.com/jayden-official *@${m.sender.split("@")[0]} REGISTERED IN THE GAME* ✅`, m, { mentions: [m.sender] })
 }
   
 async function generarSopaDeLetras() {
@@ -93,7 +93,7 @@ sopaDeLetrasConBordes += fila + "\n"
 //sopaDeLetrasConBordes += "   *╰" + "┄".repeat(LADO) + '┄┄' + "╯*"
 sopaDeLetrasConBordes = sopaDeLetrasConBordes.replace(/[a-zA-Z]/g, letra => LETRAS_POSIBLES[letra.charCodeAt() - 65] || letra)
 
-await m.reply(`https://github.com/Khalid-official 🔠 *ALPHABET SOUP* 🔠
+await m.reply(`https://github.com/jayden-official 🔠 *ALPHABET SOUP* 🔠
 *WORD:* \`\`\`"${PALABRA}"\`\`\`
 *YOU HAVE 3 MINUTES TO FIND THE CORRECT ANSWER!!*
 
@@ -114,7 +114,7 @@ sopaDir = DIRECCION.replace(/([A-Z])/g, ' $1').toLowerCase().replace(/^./, str =
 cambioLetra = sopaDir
 let tagUser = userSP + '@s.whatsapp.net'
 if (userSP != m.sender.split("@")[0]) {
-await conn.reply(m.chat, `https://github.com/Khalid-official *@${tagUser.split("@")[0]} HE IS CURRENTLY PLAYING LETTER SOUP 🔠*`, m, { mentions: [tagUser] })
+await conn.reply(m.chat, `https://github.com/jayden-official *@${tagUser.split("@")[0]} HE IS CURRENTLY PLAYING LETTER SOUP 🔠*`, m, { mentions: [tagUser] })
 return
 }
 if (intentos === 0) {
@@ -125,11 +125,11 @@ resetUserSP(sopaDir)
 async function resetUserSP() {
 await new Promise((resolve) => setTimeout(resolve, 2 * 60 * 1000)) // 2 min
 if (intentos !== 0) {
-await conn.reply(m.chat, `https://github.com/Khalid-official *@${m.sender.split("@")[0]} YOU HAVE ONE MINUTE LEFT!* 😨`, m, { mentions: [m.sender] })
+await conn.reply(m.chat, `https://github.com/jayden-official *@${m.sender.split("@")[0]} YOU HAVE ONE MINUTE LEFT!* 😨`, m, { mentions: [m.sender] })
 }
 await new Promise((resolve) => setTimeout(resolve, 3 * 60 * 1000)) // 3 min
 if (intentos !== 0) {
-await conn.reply( m.chat, `https://github.com/Khalid-official *@${m.sender.split("@")[0]} THE TIME IS UP!!* 😧\n\n*THE WORD _"${sopaPalabra}"_ WAS AT THE ADDRESS_${cambioLetra}_ AND THE LINE _${fila}_AND COLUMN _${columna}_*`, m, { mentions: [m.sender] })
+await conn.reply( m.chat, `https://github.com/jayden-official *@${m.sender.split("@")[0]} THE TIME IS UP!!* 😧\n\n*THE WORD _"${sopaPalabra}"_ WAS AT THE ADDRESS_${cambioLetra}_ AND THE LINE _${fila}_AND COLUMN _${columna}_*`, m, { mentions: [m.sender] })
 fila = null, columna = null, sopaNube = null, sopaPalabra = null, sopaDir = null, userSP = null, cambioLetra = null
 intentos = 0
 }
@@ -153,11 +153,11 @@ intentos = 0
 if (intentos === 1) {
 fila = null, columna = null, sopaNube = null, sopaPalabra = null, sopaDir = null, userSP = null, cambioLetra = null
 intentos = 0
-await m.reply(`https://github.com/Khalid-official 🫡 *YOU EXHAUSTED YOUR ATTEMPT!! THE WORD _"${sopaPalabra}"_ WAS AT THE ADDRESS _${cambioLetra}_ FROM THE ROW _${fila}_ AND COLUMN _${columna}_*`)
+await m.reply(`https://github.com/jayden-official 🫡 *YOU EXHAUSTED YOUR ATTEMPT!! THE WORD _"${sopaPalabra}"_ WAS AT THE ADDRESS _${cambioLetra}_ FROM THE ROW _${fila}_ AND COLUMN _${columna}_*`)
 return  
 } else {
 intentos -= 1
-await m.reply(`https://github.com/Khalid-official 😮‍💨 *INCORRECT. YOU ARE LEFT _${intentos}_ ATTEMPTS!!*${intentos === 1 ? '' : `\n*PALABRA A ENCONTRAR:* \`\`\`${sopaPalabra}\`\`\``}\n\n${intentos === 1 ? `\`\`\`💡 TRACK!!\`\`\`\n*THE WORD _${sopaPalabra}_ FOUND AT THE ADDRESS _"${cambioLetra}"_*\n\n` : ''}${sopaNube}`)
+await m.reply(`https://github.com/jayden-official 😮‍💨 *INCORRECT. YOU ARE LEFT _${intentos}_ ATTEMPTS!!*${intentos === 1 ? '' : `\n*PALABRA A ENCONTRAR:* \`\`\`${sopaPalabra}\`\`\``}\n\n${intentos === 1 ? `\`\`\`💡 TRACK!!\`\`\`\n*THE WORD _${sopaPalabra}_ FOUND AT THE ADDRESS _"${cambioLetra}"_*\n\n` : ''}${sopaNube}`)
 }}
 }}
 
