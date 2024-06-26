@@ -6,12 +6,12 @@ let handler = async (m, { conn, usedPrefix }) => {
 conn.tebaklagu = conn.tebaklagu ? conn.tebaklagu : {}
 let id = m.chat
 if (id in conn.tebaklagu) {
-conn.reply(m.chat, 'https://github.com/Khalid-official *‼️There are still unanswered songs in this chat.‼️*', conn.tebaklagu[id][0])
+conn.reply(m.chat, 'https://github.com/jayden-official *‼️There are still unanswered songs in this chat.‼️*', conn.tebaklagu[id][0])
 throw false
 } //5LTV57azwaid7dXfz5fzJu
 let res = await fetchJson(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/tebaklagu.json`)
 let json = res[Math.floor(Math.random() * res.length)]    
-let caption = `https://github.com/Khalid-official 
+let caption = `https://github.com/jayden-official 
 𝗚𝗨𝗘𝗦𝗦 𝗧𝗛𝗘 𝗧𝗜𝗧𝗟𝗘 𝗢𝗙 𝗧𝗛𝗘 𝗦𝗢𝗡𝗚
 𝗧𝗶𝗺𝗲⌚ ${(timeout / 1000).toFixed(2)} seconds
 𝗪𝗿𝗶𝘁𝗲𝘀✒️  *${usedPrefix}track* to get a track
@@ -21,7 +21,7 @@ conn.tebaklagu[id] = [
 await m.reply(caption),
 json, poin,
 setTimeout(() => {
-if (conn.tebaklagu[id]) conn.reply(m.chat, `https://github.com/Khalid-official *Time's up!\nThe answer is* ${json.jawaban}`, conn.tebaklagu[id][0])
+if (conn.tebaklagu[id]) conn.reply(m.chat, `https://github.com/jayden-official *Time's up!\nThe answer is* ${json.jawaban}`, conn.tebaklagu[id][0])
 delete conn.tebaklagu[id]
 }, timeout)
 ]
