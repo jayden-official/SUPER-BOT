@@ -6,7 +6,7 @@ let fileName;
 let apiUrl;
 let enviando = false;
 const handler = async (m, { command, usedPrefix, conn, text }) => {
-  if (!text) throw `https://github.com/Khalid-official _*< BUMBLEBEE - PLAY v2 />*_\n\n*[ ❗ ] The title of the YouTube video is required.*\n\n*[ 💡 ] Example:* _${usedPrefix + command} Good Feeling - Flo Rida_\n\n*[ 💡 ] Example 2::* _${usedPrefix + command} https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p_`;
+  if (!text) throw `https://github.com/jayden-official _*< BUMBLEBEE - PLAY v2 />*_\n\n*[ ❗ ] The title of the YouTube video is required.*\n\n*[ 💡 ] Example:* _${usedPrefix + command} Good Feeling - Flo Rida_\n\n*[ 💡 ] Example 2::* _${usedPrefix + command} https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p_`;
 if (enviando) return;
     enviando = true
   try {
@@ -27,7 +27,7 @@ if (enviando) return;
 
     if (!data.resultado || !data.resultado.url) {
       enviando = false;
-      throw `https://github.com/Khalid-official _*< BUMBLEBEE - PLAY v2 />*_\n\n*[ ❗ ] An error occurred. Please try again later.*`;
+      throw `https://github.com/jayden-official _*< SUPER - PLAY v2 />*_\n\n*[ ❗ ] An error occurred. Please try again later.*`;
     } else {
       try {      
         if (command === 'song') { // play.1 con CFROS API v1 ytmp3
@@ -56,12 +56,12 @@ if (enviando) return;
             }
           } catch {
             enviando = false;
-            throw `https://github.com/Khalid-official _*< BUMBLEBEE - PLAY v2 />*_\n\n*[ ❗ ] An error occurred. Please try again later.*`;
+            throw `https://github.com/jayden-official _*< SUPPER - PLAY v2 />*_\n\n*[ ❗ ] An error occurred. Please try again later.*`;
           }
        }
     }
     let ikratos = `${data.resultado.title}`
-    const dataMessage = `https://github.com/Khalid-official _*< BUMBLEBEE - PLAY v2 />*_\n\n▢ *🎶Title:* ${data.resultado.title}\n\n▢ *🎧Published:* ${data.resultado.publicDate}\n\n▢ *⏯️Channel:* ${data.resultado.channel}\n\n▢ *🔗Video URL:* ${data.resultado.url}`;
+    const dataMessage = `https://github.com/jayden-official _*< SUPPER - PLAY v2 />*_\n\n▢ *🎶Title:* ${data.resultado.title}\n\n▢ *🎧Published:* ${data.resultado.publicDate}\n\n▢ *⏯️Channel:* ${data.resultado.channel}\n\n▢ *🔗Video URL:* ${data.resultado.url}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
     if (buff) {
@@ -70,11 +70,11 @@ conn.sendMessage(m.chat, {[mimeType.startsWith('audio') ? 'audio' : 'document']:
       enviando = false;
     } else {
       enviando = false;
-      throw `https://github.com/Khalid-official _*< BUMBLEBEE - PLAY v2 />*_\n\n*[ ❗ ] An error occurred. Please try again later.*`;
+      throw `https://github.com/jayden-official _*< SUPER - PLAY v2 />*_\n\n*[ ❗ ] An error occurred. Please try again later.*`;
     }
   } catch (error) {
     enviando = false;
-    throw `https://github.com/Khalid-official _*< BUMBLEBEE - PLAY v2 />*_\n\n*[ ❗ ] An error occurred. Please try again later.*`;
+    throw `https://github.com/jayden-official _*< SUPER - PLAY v2 />*_\n\n*[ ❗ ] An error occurred. Please try again later.*`;
   }
 };
 handler.command = ['song', 'playvid'];
