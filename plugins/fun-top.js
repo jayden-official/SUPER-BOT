@@ -2,7 +2,7 @@ import util from 'util'
 import path from 'path'
 let user = a => '@' + a.split('@')[0]
 function handler(m, { groupMetadata, command, conn, text, usedPrefix}) {
-if (!text) throw `https://github.com/Khalid-official EXAMPLE :\n.top *texto*`
+if (!text) throw `https://github.com/jayden-official EXAMPLE :\n.top *texto*`
 let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.getRandom()
 let b = ps.getRandom()
