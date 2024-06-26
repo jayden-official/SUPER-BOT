@@ -19,7 +19,7 @@ const handler = async (m, { conn, usedPrefix, command, text, args }) => {
 
   if (!efecto) {
     let voiceList = await getVoiceList();
-    let responseText = `https://github.com/Khalid-official *[❗] You have not entered an effect, please enter a voice effect.*\n\n*—◉ Choose one of the following effects:*\n`;
+    let responseText = `https://github.com/jayden-official *[❗] You have not entered an effect, please enter a voice effect.*\n\n*—◉ Choose one of the following effects:*\n`;
 
     for (let i = 0, count = 0; count < 100 && i < voiceList.resultado.length; i++) {
       const entry = voiceList.resultado[i];
@@ -41,9 +41,9 @@ const handler = async (m, { conn, usedPrefix, command, text, args }) => {
     }
   }
 
-  if (!efectoValido) return conn.sendMessage(m.chat, { text: `https://github.com/Khalid-official *[❗] The given effect does not exist in the list, use ${usedPrefix + command} to find out the list of effects.*` }, { quoted: m });
+  if (!efectoValido) return conn.sendMessage(m.chat, { text: `https://github.com/jayden-official *[❗] The given effect does not exist in the list, use ${usedPrefix + command} to find out the list of effects.*` }, { quoted: m });
 
-  if (!texto) return conn.sendMessage(m.chat, {text: `https://github.com/Khalid-official *[❗] Enter the text you want to convert to audio.*\n\n*—◉ Example:*\n*◉ ${usedPrefix + command} ${effect} Hello, this is an example of using the command.*`}, { quoted: m});
+  if (!texto) return conn.sendMessage(m.chat, {text: `https://github.com/jayden-official *[❗] Enter the text you want to convert to audio.*\n\n*—◉ Example:*\n*◉ ${usedPrefix + command} ${effect} Hello, this is an example of using the command.*`}, { quoted: m});
 
   let masivo = await makeTTSRequest(texto, efecto);
   conn.sendMessage(m.chat, {audio: {url: masivo.resultado}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
