@@ -1,9 +1,9 @@
 import { webp2mp4 } from '../lib/webp2mp4.js'
 import { ffmpeg } from '../lib/converter.js'
 let handler = async (m, { conn, usedPrefix, command }) => {
-if (!m.quoted) throw `https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] respond to a sticker to be converted to video use the command  ${usedPrefix + command}*`
+if (!m.quoted) throw `https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] respond to a sticker to be converted to video use the command  ${usedPrefix + command}*`
 let mime = m.quoted.mimetype || ''
-if (!/webp/.test(mime)) throw `https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] respond to a sticker to be converted to a video, use the command ${usedPrefix + command}*`
+if (!/webp/.test(mime)) throw `https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] respond to a sticker to be converted to a video, use the command ${usedPrefix + command}*`
 let media = await m.quoted.download()
 let out = Buffer.alloc(0)
 if (/webp/.test(mime)) {
