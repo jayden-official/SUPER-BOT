@@ -5,12 +5,12 @@ let handler = async (m, { conn, command, usedPrefix }) => {
     conn.tebakbendera = conn.tebakbendera ? conn.tebakbendera : {}
     let id = m.chat
     if (id in conn.tebakbendera) {
-        conn.reply(m.chat, 'https://github.com/Khalid-official There are still unanswered questions in this chat', conn.tebakbendera[id][0])
+        conn.reply(m.chat, 'https://github.com/jayden-official There are still unanswered questions in this chat', conn.tebakbendera[id][0])
         throw false
     }
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakbendera2.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
-    let caption = `https://github.com/Khalid-official *${command.toUpperCase()}*TIMEOUT⏳*${(timeout / 1000).toFixed(2)} second*
+    let caption = `https://github.com/jayden-official *${command.toUpperCase()}*TIMEOUT⏳*${(timeout / 1000).toFixed(2)} second*
 use ${usedPrefix}fhint for *hint*
 *REWARDS🎗️*: ${poin} XP
 *TYPE SURRENDER* for *surrender*
