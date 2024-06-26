@@ -6,25 +6,25 @@ export async function before(m) {
         return !0
     this.tebakbendera = this.tebakbendera ? this.tebakbendera : {}
     if (!(id in this.tebakbendera))
-        return this.reply(m.chat, 'https://github.com/Khalid-official *THE GAME WAS OVER💔*', m)
+        return this.reply(m.chat, 'https://github.com/jayden-official *THE GAME WAS OVER💔*', m)
     if (m.quoted.id == this.tebakbendera[id][0].id) {
         let isSurrender = /^((me)?nyerah|surr?ender)$/i.test(m.text)
         if (isSurrender) {
             clearTimeout(this.tebakbendera[id][3])
             delete this.tebakbendera[id]
-            return this.reply(m.chat, 'https://github.com/Khalid-official *YEAH!!JUST GIVE UP🙄:( !*', m)
+            return this.reply(m.chat, 'https://github.com/jayden-official *YEAH!!JUST GIVE UP🙄:( !*', m)
         }
         let json = JSON.parse(JSON.stringify(this.tebakbendera[id][1]))
         
         if (m.text.toLowerCase() == json.name.toLowerCase().trim()) {
             global.db.data.users[m.sender].exp += this.tebakbendera[id][2]
-            this.reply(m.chat, `https://github.com/Khalid-official ✅ *CORRECT 💯!*\n+${this.tebakbendera[id][2]} XP`, m)
+            this.reply(m.chat, `https://github.com/jayden-official ✅ *CORRECT 💯!*\n+${this.tebakbendera[id][2]} XP`, m)
             clearTimeout(this.tebakbendera[id][3])
             delete this.tebakbendera[id]
         } else if (similarity(m.text.toLowerCase(), json.name.toLowerCase().trim()) >= threshold)
-            m.reply(`https://github.com/Khalid-official *❗A LITTLE MORE!*`)
+            m.reply(`https://github.com/jayden-official *❗A LITTLE MORE!*`)
         else
-            this.reply(m.chat, `https://github.com/Khalid-official ❌ *WRONG!*`, m)
+            this.reply(m.chat, `https://github.com/jayden-official ❌ *WRONG!*`, m)
     }
     return !0
 }
