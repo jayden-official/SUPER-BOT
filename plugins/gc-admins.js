@@ -4,11 +4,11 @@ const groupAdmins = participants.filter(p => p.admin)
 const listAdmin = groupAdmins.map((v, i) => `${i + 1}.@${v.id.split('@')[0]}`).join('\n▢ ')
 const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
 
-let text = `https://github.com/Khalid-officia 
+let text = `https://github.com/jayden-officia 
 ≡ *GROUP STAFF* _${groupMetadata.subject}_
 
 ┌─⊷ *ADMINS*
-🐝 ${listAdmin}
+😔 ${listAdmin}
 └───────────
 `.trim()
 conn.sendFile(m.chat, pp, 'staff.png', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
