@@ -19,11 +19,11 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const handler = async (m, {conn, text, usedPrefix, command}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
-  if (!text) throw `https://github.com/Khalid-official *[❗] HI THERE I'M BUMBLEBEE BOT CREATED BY 𒁂⃝ᰲ𝐊𝐇𝐀𝐋𝐈𝐃©_🇨🇺⃝𝐌𝚯𝐃͢𝐙™ ͟͞*\n\n*—◉ SAMPLE OF AI REQUESTS*\n*◉ ${usedPrefix + command}AI when did world war three begin?*\n*◉ ${usedPrefix + command} AI compose a sample of a CV*`;
+  if (!text) throw `https://github.com/jayden-official *[❗] HI THERE I'M SUPER BOT CREATED BY ĴΔ¥Đ€Ň ƤΔƤƗƗ™ ͟͞*\n\n*—◉ SAMPLE OF AI REQUESTS*\n*◉ ${usedPrefix + command}AI when did world war three begin?*\n*◉ ${usedPrefix + command} AI compose a sample of a CV*`;
   try {
         conn.sendPresenceUpdate('composing', m.chat);
         //let sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-        let sistema1 = `You will act as a WhatsApp Bot which was created by Khalid-techs, you will be The BUMBLEBEE Bot-md.`;
+        let sistema1 = `You will act as a WhatsApp Bot which was created by jayden-techs, you will be The SUPER Bot-md.`;
         async function getOpenAIChatCompletion(texto) {
         const openaiAPIKey = global.openai_key;
         let chgptdb = global.chatgpt.data.users[m.sender];
@@ -48,13 +48,13 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
-        const syms1 = `You will act as a WhatsApp Bot which was created by Khalid-techs, you will be The BUMBLEBEE Bot-md.`;
+        const syms1 = `You will act as a WhatsApp Bot which was created by Jayden-techs, you will be The SUPER Bot-md.`;
         const Empireapi1 = await fetch(`https://api.cafirexos.com/api/chatgpt?text=${text}&name=${m.name}&prompt=${syms1}`);
         const empireApijson1 = await Empireapi1.json();
         if (empireApijson1.resultado == 'error' || empireApijson1.resultado == '' || !empireApijson1.resultado) return XD; // causar error undefined para lanzar msg de error
         m.reply(`${empireApijson1.resultado}`.trim());
     } catch {
-      throw `https://github.com/Khalid-official *[❗] ERROR OCCURRED, TRY AGAIN LATER*`;
+      throw `https://github.com/jayden-official *[❗] ERROR OCCURRED, TRY AGAIN LATER*`;
     }
    }
  }
