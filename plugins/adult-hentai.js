@@ -2,8 +2,8 @@ import fetch from 'node-fetch';
 import PDFDocument from 'pdfkit';
 import {extractImageThumb} from '@whiskeysockets/baileys';
 const handler = async (m, {conn, text, usedPrefix, command, args}) => {
-  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw 'https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] The +18 commands are disabled in this group if you are admin and want to activate them use the command #enable modohorny*';
-  if (!text) throw `https://github.com/Khalid-official *[❗] enter the name of some hentai categories, for example: ${usedPrefix + command} miku*`;
+  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw 'https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] The +18 commands are disabled in this group if you are admin and want to activate them use the command #enable modohorny*';
+  if (!text) throw `https://github.com/jayden-official *[❗] enter the name of some hentai categories, for example: ${usedPrefix + command} miku*`;
   try {
     m.reply(global.wait);
     const res = await fetch(`https://api.lolhuman.xyz/api/nhentaisearch?apikey=${lolkeysapi}&query=${text}`);
@@ -21,7 +21,7 @@ const handler = async (m, {conn, text, usedPrefix, command, args}) => {
     const imagepdf = await toPDF(pages);
     await conn.sendMessage(m.chat, {document: imagepdf, jpegThumbnail, fileName: data.title.english + '.pdf', mimetype: 'application/pdf'}, {quoted: m});
   } catch {
-    throw `https://github.com/Khalid-official *[❗] Error, please try again*`;
+    throw `https://github.com/jayden-official *[❗] Error, please try again*`;
   }
 };
 handler.command = /^(hentaipdf)$/i;
