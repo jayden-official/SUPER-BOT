@@ -3,7 +3,7 @@ import { download } from 'aptoide-scraper';
 let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
   try {
     if (command === 'modapk') {
-      if (!text) throw `https://github.com/Khalid-official *[❗] Please provide the APK Name you want to download.*`;
+      if (!text) throw `https://github.com/jayden-official *[❗] Please provide the APK Name you want to download.*`;
 
       await conn.reply(m.chat, global.wait, m);
       let data = await download(text);
@@ -23,7 +23,7 @@ let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
       )
     }
   } catch {
-    throw `https://github.com/Khalid-official *[❗] An error occurred. Make sure to provide a valid link.*`;
+    throw `https://github.com/jayden-official *[❗] An error occurred. Make sure to provide a valid link.*`;
   }
 };
 
