@@ -11,7 +11,7 @@ let _muptime
       }) * 1000
     }
     let muptime = clockString(_muptime)
-		let bio = `\n🟢 𝗛𝗘𝗟𝗟𝗢, 𝗔𝗠 𝗔 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗕𝗢𝗧, 𝗔𝗖𝗧𝗜𝗩𝗘 𝗙𝗢𝗥 ${muptime}\n\n ┃ 🍭 ᖴᖇOᗰ KᕼᗩᒪIᗪ-TEᑕᕼᘔ`
+		let bio = `\n🟢 𝗛𝗘𝗟𝗟𝗢, 𝗔𝗠 𝗔 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗕𝗢𝗧, 𝗔𝗖𝗧𝗜𝗩𝗘 𝗙𝗢𝗥 ${muptime}\n\n ┃ 🍭 ᖴᖇOᗰ jAyDeN-TEᑕᕼᘔ`
 		await this.updateProfileStatus(bio).catch(_ => _)
 		setting.status = new Date() * 1
 
