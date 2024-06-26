@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, command, usedPrefix}) => {
-  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw 'https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] The +18 commands are disabled in this group if you are admin and want to activate them use the command #enable modohorny*';
+  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw 'https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] The +18 commands are disabled in this group if you are admin and want to activate them use the command #enable modohorny*';
   switch (command) {
     case 'pack':
       const url = await pack[Math.floor(Math.random() * pack.length)];
