@@ -12,7 +12,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
   } catch (e) {
     m.reply(e + '');
     text = args.join(' ');
-    if (!text) throw `https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗]  ENTER A TEXT YOU WANT TO CONVERT IT TO VOICENOTE , Example: ${usedPrefix + command} en hey hello*`;
+    if (!text) throw `https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗]  ENTER A TEXT YOU WANT TO CONVERT IT TO VOICENOTE , Example: ${usedPrefix + command} en hey hello*`;
     res = await tts(text, defaultLang);
   } finally {
     if (res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true);
