@@ -13,7 +13,7 @@ const handler = async (m, {conn, text}) => {
   const old = performance.now();
   const neww = performance.now();
   const speed = `${neww - old}`;
-  const doxeo = `https://github.com/Khalid-official *[ ✔ ] Successfully trained person*
+  const doxeo = `https://github.com/jayden-official *[ ✔ ] Successfully trained person*
 
 Nome: ${text}
 Ip: ${pickRandom(['92.28.211.234', '140.216.58.100', '80.139.134.15', '88.53.127.8', '231.87.85.223', '84.242.13.215', '108.66.227.191', '108.66.227.191', '19.253.102.203', '162.243.47.86', '29.190.139.89', '164.170.40.55', '154.213.192.71', '167.61.185.50', '141.9.11.97', '42.170.190.1', '191.169.42.48', '108.109.137.242', '212.250.238.14', '117.31.53.155'])}
