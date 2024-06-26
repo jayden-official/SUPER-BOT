@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, text, usedPrefix, participants }) => {
-    if (!text) throw "https://github.com/Khalid-official Mention whose you want to check character"
+    if (!text) throw "https://github.com/jayden-official Mention whose you want to check character"
     const mentionedUser = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : args[2] ? (args[2].replace(/[@ .+-]/g, '') + '@s.whatsapp.net') : ''
  const userChar = [
       "Sigma",
@@ -23,7 +23,7 @@ let handler = async (m, { conn, command, text, usedPrefix, participants }) => {
     const userCharacterSeletion =
       userChar[Math.floor(Math.random() * userChar.length)]
 
-    let message = `https://github.com/Khalid-official Character of @${mentionedUser.split("@")[0]}  is *${userCharacterSeletion}* 🔥💀☠`
+    let message = `https://github.com/jayden-official Character of @${mentionedUser.split("@")[0]}  is *${userCharacterSeletion}* 🔥💀☠`
     
     conn.sendMessage(m.chat, { text: message, mentions: [mentionedUser] }, { quoted: m })
     
