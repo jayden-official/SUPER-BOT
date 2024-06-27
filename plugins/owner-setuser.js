@@ -11,8 +11,8 @@ var number = text.split`@`[1]
 var number = text
    }
 
-     if(!text && !m.quoted) return m.reply(`https://github.com/Khalid-official *❏ RESET USER*\n\nTag the user, type the number, or reply to the message of the user you want to RESET`)
-     if(isNaN(number)) return m.reply(`https://github.com/Khalid-official ❏ The number you entered is invalid`)
+     if(!text && !m.quoted) return m.reply(`https://github.com/jayden-official *❏ RESET USER*\n\nTag the user, type the number, or reply to the message of the user you want to RESET`)
+     if(isNaN(number)) return m.reply(`https://github.com/jayden-official ❏ The number you entered is invalid`)
 
        try {
 if(text) {
@@ -26,7 +26,7 @@ var user = m.quoted.sender
    } finally {
      let number = user.split('@')[0]
          delete global.global.db.data.users[user]
-         conn.reply(m.chat, `https://github.com/Khalid-official *❏ RESTARTED USER*\n\n✅ Restarted to @${number} of *DATABASE*`, null, { mentions: [user] })
+         conn.reply(m.chat, `https://github.com/jayden-official *❏ RESTARTED USER*\n\n✅ Restarted to @${number} of *DATABASE*`, null, { mentions: [user] })
      }
     
 }
