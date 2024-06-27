@@ -6,7 +6,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
          let who;
   if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false;
   else who = m.chat;
-  if (!who) throw `https://github.com/Khalid-official ⚠️ *_Tag or mention someone._*\n\n*📌 Example*:${usedPrefix + command} @tag`;
+  if (!who) throw `https://github.com/jayden-official ⚠️ *_Tag or mention someone._*\n\n*📌 Example*:${usedPrefix + command} @tag`;
 
   const user = global.db.data.users[who];
   const name = conn.getName(who);
