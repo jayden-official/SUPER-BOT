@@ -1,12 +1,12 @@
 let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let text = `*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254736958034*
-*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254731856091*
+let text = `*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254794597254*
+*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254794597254*
 
-*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254114098508*`.trim()   
+*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254786827982*`.trim()   
 let buttonMessage= {
-'document': { url: `https://github.com/Khalid-niccur` },
+'document': { url: `https://github.com/jayden-official` },
 'mimetype': `application/${document}`,
 'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
 'fileLength': 99999999999999,
@@ -15,13 +15,13 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/khalid-niccur',
+'mediaUrl': 'https://github.com/jayden-official',
 'mediaType': 2,
 'previewType': 'pdf',
 'title':   '  𝖙𝖗𝖆𝖓𝖘𝖋𝖔𝖗𝖒𝖊𝖗𝖘 𝖗𝖎𝖘𝖊⁩',
 'body': wm,
 'thumbnail': imagen1,
-'sourceUrl': 'https://github.com/Khalid-niccur' }},
+'sourceUrl': 'https://github.com/jayden-official' }},
 'caption': text,
 'footer': wm,
 //'buttons':[
