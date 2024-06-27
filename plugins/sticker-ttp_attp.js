@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import { sticker, addExif } from '../lib/sticker.js'
 import { Sticker } from 'wa-sticker-formatter'
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
-if (!text) throw `https://github.com/Khalid-official *[❗] 𝐞𝐧𝐭𝐞𝐫 𝐭𝐞𝐱𝐭*\n\n*—◉ EXAMPLE:*\n*◉ ${usedPrefix + command} BUMBE BEE Bot*`
+if (!text) throw `https://github.com/jayden-official *[❗] 𝐞𝐧𝐭𝐞𝐫 𝐭𝐞𝐱𝐭*\n\n*—◉ EXAMPLE:*\n*◉ ${usedPrefix + command} SUPER Bot*`
 let teks = encodeURI(text)
 
 if (command == 'attp') {
