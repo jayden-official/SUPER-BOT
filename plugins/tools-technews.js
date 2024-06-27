@@ -7,9 +7,9 @@ let handler = async (m, { conn }) => {
     let json = await res.json();
     if (!json.news) throw json;
 
-    let techNews = `https://github.com/Khalid-official •───── ୨❀୧ ─────•
+    let techNews = `https://github.com/jayden-official •───── ୨❀୧ ─────•
     ❖ 𝑺𝑻𝑨𝑻𝑼𝑺: Active
-    ㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: BUMBLEBEE 
+    ㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: SUPER BOT
     ☞ 𝑵𝑬𝑾𝑺: ${json.news}
       •───── ୨❀୧ ─────•
     `;
