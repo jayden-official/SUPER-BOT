@@ -20,21 +20,21 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║ ◉— *𝐓𝐇𝐄-𝐁𝐔𝐌𝐁𝐋𝐄🐝𝐁𝐎𝐓* —◉
+║ ◉— *𝐓𝐇𝐄-𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *𝗛ELLO, ${taguser}*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
 
 ┏━━━━━━━━━━━━━━━━┓
-┃ *<🐝𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎🐝/>*
+┃ *<𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣*- WRITE THE FOLLOWING WORDS OR PHRASES WITHOUT ANY
   PREFIX(#, /, *, .)*
 ┣ ඬ⃟🔊 _pussy_
 ┣ ඬ⃟🔊 _Admin Party_
 ┣ ඬ⃟🔊 _Administrator Party_
-┣ ඬ⃟🔊 _bumblebee_
+┣ ඬ⃟🔊 _superbot_
 ┣ ඬ⃟🔊 _sana_
 ┣ ඬ⃟🔊 _Siiiuu_
 ┣ ඬ⃟🔊 _aah_
@@ -50,9 +50,9 @@ let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ┣ ඬ⃟🔊 _simp_
 ┣ ඬ⃟🔊 _stupid_
 ┣ ඬ⃟🔊 _roman_
-┣ ඬ⃟🔊 _.bumblebee_
+┣ ඬ⃟🔊 _.super_
 ┣ ඬ⃟🔊 _Bot_
-┣ ඬ⃟🔊 _bumblebee_
+┣ ඬ⃟🔊 _thank you_
 ┣ ඬ⃟🔊 _sana_
 ┗━━━━━━━━━━━━━━━━┛`.trim()
 if (m.isGroup) {
