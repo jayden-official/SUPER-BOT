@@ -13,13 +13,13 @@ let expp = Math.floor(Math.random() * 5000)
   global.db.data.users[m.sender].joincount += tok
   global.db.data.users[m.sender].exp += expp
   
-let texto = `https://github.com/Khalid-official 
+let texto = `https://github.com/jayden-official 
 ╔══🎉═🎉═🎉══⬣
 ║🛒 GETS A CHEST
 ║┈┈┈┈┈┈┈┈┈┈┈┈┈
 ║➢ *${day} Diamonds* 💎
 ║➢ *${tok} Tokens* 🪙
-║➢ *${mystic} Bumble🐝bee coins* 👾
+║➢ *${mystic} Superbot coins* 👾
 ║➢ *${expp} Exp* ⚡
 ╚═════════════════⬣`
 
