@@ -2,16 +2,16 @@ const cooldown = 300000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
-    if (user.health < 80) return m.reply(`https://github.com/Khalid-official 
+    if (user.health < 80) return m.reply(`https://github.com/jayden-official 
 Requires at least 80 ❤️Healths for the adventure!!
 please buy ❤️Healths first by typing *${usedPrefix}buy potion <quantity>*,
 and type *${usedPrefix}heal <quantity>* to use potions
 `.trim())
-    if (new Date - user.lastadventure <= cooldown) return m.reply(`https://github.com/Khalid-official 
+    if (new Date - user.lastadventure <= cooldown) return m.reply(`https://github.com/jayden-official 
 You're already adventure!!, please wait *🕐${timers.toTimeString()}*
 `.trim())
     const rewards = reward(user)
-    let text = 'https://github.com/Khalid-official you\'ve been adventure and lost'
+    let text = 'https://github.com/jayden-official you\'ve been adventure and lost'
     for (const lost in rewards.lost) if (user[lost]) {
         const total = rewards.lost[lost].getRandom()
         user[lost] -= total * 1
