@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text }) => {
-  if (!text) throw 'https://github.com/Khalid-official *[❗] Please provide a word to search for.*';
+  if (!text) throw 'https://github.com/jayden-official *[❗] Please provide a word to search for.*';
 
   const url = `https://api.urbandictionary.com/v0/define?term=${encodeURIComponent(text)}`;
 
