@@ -42,27 +42,27 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    let speed = neww - old
   
 let infobt = `
-≡ *BUMBLEBEE BOT INFO*
+≡ *SUPER BOT INFO*
   *STATE*
-🐝 *${groupsIn.length}* Group Chats
-🐝 *${groupsIn.length}* United groups
-🐝 *${groupsIn.length - groupsIn.length}* Abandoned groups
-🐝 *${chats.length - groupsIn.length}* Private chats
-🐝 *${chats.length}* Total Chats
+ *${groupsIn.length}* Group Chats
+ *${groupsIn.length}* United groups
+ *${groupsIn.length - groupsIn.length}* Abandoned groups
+ *${chats.length - groupsIn.length}* Private chats
+ *${chats.length}* Total Chats
 
 *≡ OWNER*
-   KHALID-TECHNOLOGIES
-🐝Instagram :
-   •https://github.com/Khalid-official
-🐝 WhatsApp :
+   JAY-TECHNOLOGIES
+Instagram :
+   •https://github.com/jayden-official
+ WhatsApp :
    • (DM ONLY WHEN NECESSARY)
-🐝 GitHub :
-   • https://github.com/Khalid-official/BUMBLEBEE-BOT
+ GitHub :
+   • https://github.com/jayden-official/SUPER-BOT
  
   *≡ HELPERS* *CRISS*
-🐝 WhatsApp : wa.me/254114098508
-   khalid+TECHNOLOGY 
-🐝 WhatsApp : wa.me/254736958034
+ WhatsApp : wa.me/254786827982
+   Jay+TECHNOLOGY 
+ WhatsApp : wa.me/254794597254
 
   *≡ S E R V E R*
 *🛑RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
