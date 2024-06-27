@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, usedPrefix, participants, isPrems }) => {
 let pp = 'https://i.imgur.com/WHjtUae.jpg'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-if (!(who in global.db.data.users)) throw `https://github.com/Khalid-official  The user you are mentioning is not registered in my database`
+if (!(who in global.db.data.users)) throw `https://github.com/jayden-official  The user you are mentioning is not registered in my database`
 try {
 pp = await conn.profilePictureUrl(who)
 } catch (e) {
@@ -19,7 +19,7 @@ let str = `*🔖𝐍𝐀𝐌𝐄 :* ${username} ${registered ? '(' + name + ') '
 *🏆𝐋𝐈𝐌𝐈𝐓:* ${limit} APPLICATIONS
 *📇𝐑𝐄𝐆𝐈𝐒𝐓𝐄𝐑𝐄𝐃:* ${registered ? 'Yeah': 'No'}
 *⭐𝐏𝐑𝐄𝐌𝐈𝐔𝐌:* ${premiumTime > 0 ? 'Yeah' : (isPrems ? 'Yeah' : 'No') || ''}
-*🐝𝐒𝐄𝐑𝐈𝐀𝐋 𝐍𝐔𝐌𝐁𝐄𝐑 :* 
+*💫𝐒𝐄𝐑𝐈𝐀𝐋 𝐍𝐔𝐌𝐁𝐄𝐑 :* 
 ${sn}`
 conn.sendMessage(m.chat, { image: { url: pp }, caption: str }, { quoted: m })
 //conn.sendButton(m.chat, str, author, pp, [['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']], m)
