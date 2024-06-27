@@ -4,7 +4,7 @@ conn.math = conn.math ? conn.math : {}
 if (id in conn.math) {
 clearTimeout(conn.math[id][3])
 delete conn.math[id]
-m.reply('https://github.com/Khalid-official HEY! YOU ARE CHEATING')
+m.reply('https://github.com/jayden-official HEY! YOU ARE CHEATING')
 }
 let val = text
 .replace(/[^0-9\-\/+*×÷πEe()piPI/]/g, '')
