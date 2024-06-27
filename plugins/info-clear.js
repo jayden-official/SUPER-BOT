@@ -5,10 +5,10 @@ import path from 'path';
 
 const handler = async (m, { conn, usedPrefix }) => {
   if (global.conn.user.jid !== conn.user.jid) {
-    return conn.sendMessage(m.chat, {text: 'https://github.com/Khalid-official *[❗] Use this command directly in the main number of the Bot*'}, {quoted: m});
+    return conn.sendMessage(m.chat, {text: 'https://github.com/jayden-official *[❗] Use this command directly in the main number of the Bot*'}, {quoted: m});
   }
   const chatId = m.isGroup ? [m.chat, m.sender] : [m.sender];
-  const sessionPath = './BumbleSession/';
+  const sessionPath = './SuperSession/';
   try {
     const files = await fs.readdir(sessionPath);
     let filesDeleted = 0;
@@ -22,13 +22,13 @@ const handler = async (m, { conn, usedPrefix }) => {
       }
     }
     if (filesDeleted === 0) {
-      await conn.sendMessage(m.chat, {text: 'https://github.com/Khalid-official *[❗] No file found that includes the chat ID*'}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: 'https://github.com/jayden-official *[❗] No file found that includes the chat ID*'}, {quoted: m});
     } else {
-      await conn.sendMessage(m.chat, {text: `https://github.com/Khalid-official *[❗] Deleted ${filesDeleted} session files*`}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: `https://github.com/jayden-official *[❗] Deleted ${filesDeleted} session files*`}, {quoted: m});
     }
   } catch (err) {
     console.error('Error reading session folder or files:', err);
-    await conn.sendMessage(m.chat, {text: 'https://github.com/Khalid-officialhttps://github.com/Khalid-official *[❗] An error occurred while deleting session files*'}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: 'https://github.com/jayden-officialhttps://github.com/jayden-official *[❗] An error occurred while deleting session files*'}, {quoted: m});
   }
   await conn.sendMessage(m.chat, {text: `https://github.com/Khalid-official *👋 Hello! Now do you see me?*\n\n*[❗] If the Bot does not respond to your commands please do a little spam*\n\n*—◉ Example:*\n${usedPrefix}s\n${usedPrefix}s\n${usedPrefix}s`}, {quoted: m});
 };
