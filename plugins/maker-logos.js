@@ -3,8 +3,8 @@ import cheerio from "cheerio";
 import FormData from "form-data";
 const split = '|';
 const handler = async (m, {conn, args: [effect], text: txt, usedPrefix, command, name}) => {
-  if (!effect) throw 'https://github.com/Khalid-official*[❗𝐈𝐍𝐅𝐎❗] Correct use of commands sir?*\n—◉ _#logo (efecto) (texto)_\n*EXAMPLE:*\n—◉ _#logo 3d-deep-sea-metal Bumble_\n\n*[❗] When the month says that you have finished, the use would be:*\n—◉ _#logo (efecto) (texto1|texto2)_\n*EXAMPLE:*\n—◉ _#logo Wolf-Logo-Galaxy bumblebee|Bot_\n\n*<𝗟𝗶𝘀𝘁 𝗼𝗳 𝗘𝗳𝗳𝗲𝗰𝘁𝘀/>*\n\n° ඬ⃟📝 #logo ' + effects.map((v) => v.title).join('\n° ඬ⃟📝 #logo ');
-  if (!effects.find((v) => (new RegExp(v.title, 'gi')).test(effect))) throw `https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] The Effect ${effect} 𝗶𝘀 𝗻𝗼𝘁 𝗳𝗼𝘂𝗻𝗱 𝗼𝗻 𝘁𝗵𝗲 𝗹𝗶𝘀𝘁 𝗼𝗳 𝗲𝗳𝗲𝗰𝘁𝘀*`;  
+  if (!effect) throw 'https://github.com/jayden-official*[❗𝐈𝐍𝐅𝐎❗] Correct use of commands sir?*\n—◉ _#logo (efecto) (texto)_\n*EXAMPLE:*\n—◉ _#logo 3d-deep-sea-metal Super_\n\n*[❗] When the month says that you have finished, the use would be:*\n—◉ _#logo (efecto) (texto1|texto2)_\n*EXAMPLE:*\n—◉ _#logo Wolf-Logo-Galaxy super|Bot_\n\n*<𝗟𝗶𝘀𝘁 𝗼𝗳 𝗘𝗳𝗳𝗲𝗰𝘁𝘀/>*\n\n° ඬ⃟📝 #logo ' + effects.map((v) => v.title).join('\n° ඬ⃟📝 #logo ');
+  if (!effects.find((v) => (new RegExp(v.title, 'gi')).test(effect))) throw `https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] The Effect ${effect} 𝗶𝘀 𝗻𝗼𝘁 𝗳𝗼𝘂𝗻𝗱 𝗼𝗻 𝘁𝗵𝗲 𝗹𝗶𝘀𝘁 𝗼𝗳 𝗲𝗳𝗲𝗰𝘁𝘀*`;  
   let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart();
   if (text.includes(split)) {
     text = text.split(split).map((t) => t.trim());
@@ -12,8 +12,8 @@ const handler = async (m, {conn, args: [effect], text: txt, usedPrefix, command,
     text = [text.trim()];
   }
   const effectoSelect = effects.find((effectz) => new RegExp(effectz?.title, 'i').test(effect));
-  const res = await maker(effectoSelect?.url, [...text]).catch(_ => { throw 'https://github.com/Khalid-official *[❗] we kijana weka command vizuri mbwa*' })
-   if (typeof res == 'number') throw res == -1 ? `https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] 𝘁𝗵𝗲 𝗲𝗳𝗳𝗲𝗰𝘁 ${effect}  𝗶𝘀 𝗻𝗼𝘁 𝗳𝗼𝘂𝗻𝗱 𝗼𝗻 𝘁𝗵𝗲 𝗹𝗶𝘀𝘁 𝗼𝗳 𝗲𝗳𝗳𝗲𝗰𝘁𝘀*` : `https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] 𝗧𝗵𝗲 𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝘂𝘀𝗲 𝗼𝗳 𝗰𝗼𝗺𝗮𝗻𝗱 𝗶𝘀 ${usedPrefix + command} ${effect} ${new Array(res).fill('texto').map((v, i) => v + (i ? i + 1 : '')).join('|')}*`;
+  const res = await maker(effectoSelect?.url, [...text]).catch(_ => { throw 'https://github.com/jayden-official *[❗] we kijana weka command vizuri mbwa*' })
+   if (typeof res == 'number') throw res == -1 ? `https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] 𝘁𝗵𝗲 𝗲𝗳𝗳𝗲𝗰𝘁 ${effect}  𝗶𝘀 𝗻𝗼𝘁 𝗳𝗼𝘂𝗻𝗱 𝗼𝗻 𝘁𝗵𝗲 𝗹𝗶𝘀𝘁 𝗼𝗳 𝗲𝗳𝗳𝗲𝗰𝘁𝘀*` : `https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] 𝗧𝗵𝗲 𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝘂𝘀𝗲 𝗼𝗳 𝗰𝗼𝗺𝗮𝗻𝗱 𝗶𝘀 ${usedPrefix + command} ${effect} ${new Array(res).fill('texto').map((v, i) => v + (i ? i + 1 : '')).join('|')}*`;
   await conn.sendMessage(m.chat, {image: {url: res.image}, caption: `*𝗛𝗘𝗥𝗘 𝗜𝗦 𝗧𝗛𝗘 𝗥𝗘𝗦𝗨𝗟𝗧𝗦 𝗢𝗙 𝗪𝗛𝗔𝗧 𝗜 𝗙𝗢𝗨𝗡𝗗 !!*\n*𝗘𝗙𝗙𝗘𝗖𝗧: ${effect}*`}, {quoted: m});  
 };
 handler.help = ['logos'];
