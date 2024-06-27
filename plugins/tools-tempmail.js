@@ -9,7 +9,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
 
       if (data.status && data.result && data.result.length > 0) {
         const tempMails = data.result.join('\n');
-        const replyMessage = `https://github.com/Khalid-official *Temporary Email Addresses:*\n\n${tempMails}\n\n use \`\`\`\.checkmail <mail-address>\`\`\`\ if you want to check inbox of any temp mail used from above`;
+        const replyMessage = `https://github.com/jayden-official *Temporary Email Addresses:*\n\n${tempMails}\n\n use \`\`\`\.checkmail <mail-address>\`\`\`\ if you want to check inbox of any temp mail used from above`;
         m.reply(replyMessage);
       } else {
         m.reply('No temporary email addresses found.');
@@ -20,7 +20,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
     }
   } else if (command === 'checkmail') {
     if (!text && !(m.quoted && m.quoted.text)) {
-      m.reply('https://github.com/Khalid-official Please provide some text or quote a message to get a response.');
+      m.reply('https://github.com/jayden-official Please provide some text or quote a message to get a response.');
       return;
     }
 
