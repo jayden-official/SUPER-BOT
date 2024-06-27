@@ -4,7 +4,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
     if (!m.quoted.text) throw `balas pesan nya!`
     let path = `${text}`
     await fs.writeFileSync(path, m.quoted.text)
-    m.reply(`https://github.com/Khalid-official stored in ${path}`)
+    m.reply(`https://github.com/jayden-official stored in ${path}`)
 }
 handler.help = ['sf'].map(v => v + ' <teks>')
 handler.tags = ['owner']
