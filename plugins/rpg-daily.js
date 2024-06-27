@@ -44,7 +44,7 @@ for (let reward of Object.keys(recompensas)) {
     if (!(reward in user)) continue
     user[reward] += recompensas[reward]
 texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n┃ `}
-let text = `https://github.com/Khalid-official ╭━━🎁━🎁━🎁━━⬣
+let text = `https://github.com/jayden-official ╭━━🎁━🎁━🎁━━⬣
 ┃ ✨ *YOU GET A GIFT*!!
 ┃ *${premium ? '🎟️ premium reward' : '🆓 Free Reward'}*
 ┃ ${texto}
