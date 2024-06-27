@@ -5,12 +5,12 @@ let handler = async(m, { conn, text }) => {
   const symbolRegex = /^[^\w\s]{1}$/
 
   if (!symbolRegex.test(text)) {
-    throw `https://github.com/Khalid-official *[❗] Invalid symbol input. Please provide exactly one symbol as a prefix.*`
+    throw `https://github.com/jayden-official *[❗] Invalid symbol input. Please provide exactly one symbol as a prefix.*`
   }
 
   // If the input is valid (contains exactly one symbol), update the prefix
   global.prefix = new RegExp('^[' + text.replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
-  await m.reply(`https://github.com/Khalid-official *[❗] the prefix has been changed to* *${text}*`)
+  await m.reply(`https://github.com/jayden-official *[❗] the prefix has been changed to* *${text}*`)
 }
 handler.help = ['.setprefix ', '.setprefix [symbol]']
 handler.tags = ['owner']
