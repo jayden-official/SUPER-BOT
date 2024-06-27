@@ -8,15 +8,15 @@ import uploadFile from "../lib/uploadFile.js"
 let handler = async (m, { conn, usedPrefix, args}) => {
 	let towidth = args[0]
 	let toheight = args[1]
-	if (!towidth) throw 'https://github.com/Khalid-official *What size width do I put?*' if (!toheight) throw '*How long do I put?*'
+	if (!towidth) throw 'https://github.com/jayden-official *What size width do I put?*' if (!toheight) throw '*How long do I put?*'
 	
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) throw `https://github.com/Khalid-official ⚠️ *_Remember to tag an image._*\n*📌 Example:* ${usedPrefix + command} 400 400`
+if (!mime) throw `https://github.com/jayden-official ⚠️ *_Remember to tag an image._*\n*📌 Example:* ${usedPrefix + command} 400 400`
 
 let media = await q.download()
 let isMedia = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
-if (!isMedia) throw `https://github.com/Khalid-official ⚠️ *The file ${mime} is not supported._*`
+if (!isMedia) throw `https://github.com/jayden-official ⚠️ *The file ${mime} is not supported._*`
 let link = await (isMedia ? uploadImage : uploadImage)(media)
 
 let source = await jimp.read(await link)
