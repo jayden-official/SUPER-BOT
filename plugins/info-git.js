@@ -3,11 +3,11 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
 *➤ GITHUB OWNER:*
-*1.-* https://github.com/Khalid-official
+*1.-* https://github.com/jayden-official
 *_FOLLOW💯FOR FOLLOW BACK🤹_*
 `.trim()   
 let buttonMessage= {
-'document': { url: `https://github.com/Khalid-niccur` },
+'document': { url: `https://github.com/jayden-official` },
 'mimetype': `application/${document}`,
 'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
 'fileLength': 99999999999999,
@@ -16,7 +16,7 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/Khalid-niccur',
+'mediaUrl': 'https://github.com/jayden-official',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': '𝑻𝒓𝒂𝒏𝒔𝒇𝒐𝒓𝒎𝒆𝒓𝒔 𝒂𝒓𝒊𝒔𝒆 𝒂𝒏𝒅 𝒔𝒉𝒊𝒏𝒆⁩',
