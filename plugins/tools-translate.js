@@ -18,7 +18,7 @@ try {
 let lol = await fetch(`https://api.lolhuman.xyz/api/translate/auto/${lang}?apikey=${lolkeysapi}&text=${text}`)
 let loll = await lol.json()
 let result2 = loll.result.translated
-await m.reply('https://github.com/Khalid-official *Translation:* ' + result2)
+await m.reply('https://github.com/jayden-official *Translation:* ' + result2)
 } catch { 
 await m.reply('*[❗𝐈𝐍𝐅𝐎❗] ERROR,  occurred please try again later *')    
 }}}
