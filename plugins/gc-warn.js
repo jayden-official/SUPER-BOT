@@ -14,7 +14,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   const dReason = ' *😏STUPIDITY😏*';
   const msgtext = text || dReason;
   const sdms = msgtext.replace(/@\d+-?\d* /g, '');
-  const warntext = `https://github.com/Khalid-official *[❗] TAG A PERSON OR RESPOND TO THE MESSAGE YOU WANT THE PERSON TO BE WARNED*\n\n*—◉ EXAMPLE:*\n*${
+  const warntext = `https://github.com/jayden-official *[❗] TAG A PERSON OR RESPOND TO THE MESSAGE YOU WANT THE PERSON TO BE WARNED*\n\n*—◉ EXAMPLE:*\n*${
     usedPrefix + command
   } @${global.suittag}*`;
   if (!who) {
@@ -33,7 +33,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   if (user.warn >= 2) {
     if (!bot.restrict) {
       return m.reply(
-          'https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗]The owner of the bot does not have the restrictions enabled (#𝚎𝚗𝚊𝚋𝚕𝚎 𝚛𝚎𝚜𝚝𝚛𝚒𝚌𝚝) contact him to enable it*',
+          'https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗]The owner of the bot does not have the restrictions enabled (#𝚎𝚗𝚊𝚋𝚕𝚎 𝚛𝚎𝚜𝚝𝚛𝚒𝚌𝚝) contact him to enable it*',
       );
     }
     user.warn = 0;
