@@ -9,10 +9,10 @@ const defaultType = 'apple'
 if (tipe && !emoji) {
 emoji = tipe
 tipe = defaultType }
-let err = `https://github.com/Khalid-official *[❗] THE CORRECT USE OF THE COMMANDS IS*
+let err = `https://github.com/jayden-official *[❗] THE CORRECT USE OF THE COMMANDS IS*
 *◉ ${usedPrefix + command} <tipo> <emoji>*
 
-*—◉ EXAMPLE🐝:*
+*—◉ EXAMPLE:*
 *◉ ${usedPrefix + command}* fa 😎
 
 *—◉ GUYS* 
