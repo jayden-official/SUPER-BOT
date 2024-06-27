@@ -8,12 +8,12 @@ let handler = async (m, { conn, command, args }) => {
   if (global.db.data.users[m.sender].exp >= xpperdiamond * count) {
     global.db.data.users[m.sender].exp -= xpperdiamond * count
     global.db.data.users[m.sender].diamond += count
-    conn.reply(m.chat, `https://github.com/Khalid-official 
+    conn.reply(m.chat, `https://github.com/jayden-official 
 ┌─「*PAYMENT NOTE* 」
 ‣ *Nominal Purchase* : + ${count}💎
 ‣ *Spent* : -${xpperdiamond * count} XP
 └──────────────`, m)
-  } else conn.reply(m.chat, `https://github.com/Khalid-official ❎Sorry, you don't have enough *XP* to buy *${count}* Diamonds💎\n\n You can get *XP* using the commands from the *games and economy menu*`, m)
+  } else conn.reply(m.chat, `https://github.com/jayden-official ❎Sorry, you don't have enough *XP* to buy *${count}* Diamonds💎\n\n You can get *XP* using the commands from the *games and economy menu*`, m)
 }
 handler.help = ['buy', 'buyall']
 handler.tags = ['econ']
