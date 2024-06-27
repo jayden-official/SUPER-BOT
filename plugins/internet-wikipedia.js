@@ -25,10 +25,10 @@ status: link.status,
 Pesan: eror}
 return notFond}}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `https://github.com/Khalid-official *[❗️𝐈𝐍𝐅𝐎❗️] YOU ARE USING THE COMMAND WRONG!!*\n*CORRECT USE:*\n*${usedPrefix + command} keyword to search for*\n\n*EXAMPLE:*\n*${usedPrefix + command} Stars*`
+if (!text) throw `https://github.com/jayden-official *[❗️𝐈𝐍𝐅𝐎❗️] YOU ARE USING THE COMMAND WRONG!!*\n*CORRECT USE:*\n*${usedPrefix + command} keyword to search for*\n\n*EXAMPLE:*\n*${usedPrefix + command} Stars*`
 wikipedia(`${text}`).then(res => {
 m.reply(`*Here is the information found:*\n\n` + res.result.isi)
-}).catch(() => { m.reply('https://github.com/Khalid-official *[❗️𝐈𝐍𝐅𝐎❗️] NO INFORMATION WAS FOUND, PROVE THAT YOU HAVE WRITTEN A SINGLE WORD AND YOU HAVE WRITTEN IT CORRECTLY*') })}
+}).catch(() => { m.reply('https://github.com/jayden-official *[❗️𝐈𝐍𝐅𝐎❗️] NO INFORMATION WAS FOUND, PROVE THAT YOU HAVE WRITTEN A SINGLE WORD AND YOU HAVE WRITTEN IT CORRECTLY*') })}
 handler.help = ['wikipedia'].map(v => v + ' <apa>')
 handler.tags = [ 'internet']
 handler.command = /^(wiki|wikipedia)$/i
