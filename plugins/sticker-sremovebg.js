@@ -10,7 +10,7 @@ let sremovebg = global.API(`https://api.lolhuman.xyz/api/removebg?apikey=${lolke
 let stickerr = await sticker(false, sremovebg, global.packname, global.author)
 conn.sendFile(m.chat, stickerr, 'sticker.webp', '', m, { asSticker: true })
 } catch (e) {
-m.reply('https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗]Send/reply an image with command*')
+m.reply('https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗]Send/reply an image with command*')
 }}
 handler.command = /^sremovebg|removebg$/i
 export default handler
