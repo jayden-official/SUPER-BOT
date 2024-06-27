@@ -1,7 +1,7 @@
 const {downloadContentFromMessage} = (await import('@whiskeysockets/baileys'));
 
 const handler = async (m, {conn}) => {
-  if (!m.quoted) throw 'https://github.com/Khalid-official *[❗] RESPOND TO A MESSAGE THAT HAS BEEN SENT IN VIEWONCE (see only once)*';
+  if (!m.quoted) throw 'https://github.com/jayden-official *[❗] RESPOND TO A MESSAGE THAT HAS BEEN SENT IN VIEWONCE (see only once)*';
   if (m.quoted.mtype !== 'viewOnceMessageV2') throw '*[❗] Respond to an image or video that is sent with viewonce option*';
   const msg = m.quoted.message;
   const type = Object.keys(msg)[0];
