@@ -11,7 +11,7 @@ const handler = async (m, {conn, command}) => {
       const name = await conn.getName(who);
       m.reply(name);
     } catch {
-      throw `https://github.com/Khalid-official Sorry, I can't try the others⍨`;
+      throw `https://github.com/jayden-official Sorry, I can't try the others⍨`;
     }
   }
 };
