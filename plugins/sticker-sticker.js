@@ -29,14 +29,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     } else if (args[0]) {
       if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
-      else return m.reply('https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] the link /url/link is not valid, the ending of the link /url/link must be . jpg, example:: ${usedPrefix}s https://th.bing.com/th/id/OIP.U2UcnOVASrcsxRpb_2TxUQHaHa?pid=ImgDet&rs=1*')
+      else return m.reply('https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] the link /url/link is not valid, the ending of the link /url/link must be . jpg, example:: ${usedPrefix}s https://th.bing.com/th/id/OIP.U2UcnOVASrcsxRpb_2TxUQHaHa?pid=ImgDet&rs=1*')
     }
   } catch (e) {
     console.error(e)
     if (!stiker) stiker = e
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
-    else throw 'https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗] An error occurred, please try again. Answer video, image or insert the link of an image termicion.jpg which will be converted into a sticker*'
+    else throw 'https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗] An error occurred, please try again. Answer video, image or insert the link of an image termicion.jpg which will be converted into a sticker*'
   }}
 handler.help = ['sfull']
 handler.tags = ['sticker']
