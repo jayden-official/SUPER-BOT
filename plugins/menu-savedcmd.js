@@ -5,7 +5,7 @@ try {
 } finally {
 let name = await conn.getName(m.sender)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-let str = `https://github.com/Khalid-official 
+let str = `https://github.com/jayden-official 
 *ミ💖 𝙷𝙾𝙻𝙰 ${taguser} 💖彡*
 
 ㅤㅤㅤㅤ *🗳️<𝕊𝔸𝔽𝔼/>🔐*
