@@ -2,7 +2,7 @@ import uploadImage from '../lib/uploadImage.js'
 let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) throw 'https://github.com/Khalid-official *[❗] Tag or respond to an image*'    
+if (!mime) throw 'https://github.com/jayden-official *[❗] Tag or respond to an image*'    
 let img = await q.download?.()
 let url = await uploadImage(img)    
 let docname = text ? text : m.pushName || 'documento'
