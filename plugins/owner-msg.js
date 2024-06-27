@@ -17,7 +17,7 @@ if (new Date - db.data.users[m.sender].msgwait < 300000) throw `*_⚠️ • you
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = await conn.getName(m.sender)
 let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats && !chat.metadata?.read_only && !chat.metadata?.announce).map(v => v[0])
-let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("6289643739077-1613049930@g.us" ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": '🐱⸽⃕NʏᴀɴCᴀᴛBᴏᴛ - MD🍁⃨፝⃕✰', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': '🍃 𝗕𝗨𝗠𝗕𝗟𝗘𝗕𝗘𝗘🫧𝐁𝐎𝐓-𝗠𝗗🔮', 'jpegThumbnail': false }}}
+let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("6289643739077-1613049930@g.us" ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": '🐱⸽⃕NʏᴀɴCᴀᴛBᴏᴛ - MD🍁⃨፝⃕✰', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': '🍃 𝗦𝗨𝗣𝗘𝗥-𝗠𝗗', 'jpegThumbnail': false }}}
 let teks = `*🌺 • Group:* ${groupMetadata.subject}\n*🍀 • Owner:* ${name}\n*🍁 • number:* wa.me/${who.split`@`[0]}\n*📧 • message:* ${text}`
 for (let id of groups) {
 await conn.sendMessage(id, { text: teks }, { quoted: fakegif })
