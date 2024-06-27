@@ -9,7 +9,7 @@ let handler = async (m, { conn, isROwner, usedPrefix, command, text }) => {
    const pluginNames = Object.keys(plugins).map(name => name.replace('.js', ''));
   
    if (!text) {
-     throw `https://github.com/Khalid-official 
+     throw `https://github.com/jayden-official 
 ✳️ Command usage: ${usedPrefix + command} <name file>
       
 📌 Example:
