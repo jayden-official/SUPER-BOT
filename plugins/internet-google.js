@@ -3,7 +3,7 @@ import axios from 'axios'
 let handler = async (m, { conn, command, args }) => {
 const fetch = (await import('node-fetch')).default
 let text = args.join` `
-if (!text) return conn.reply(m.chat, 'https://github.com/Khalid-official *[❗𝐈𝐍𝐅𝐎❗]ENTER THE TEXT OR SUBJECT YOU WANT TO SEARCH*', m)
+if (!text) return conn.reply(m.chat, 'https://github.com/jayden-official *[❗𝐈𝐍𝐅𝐎❗]ENTER THE TEXT OR SUBJECT YOU WANT TO SEARCH*', m)
 let url = 'https://google.com/search?q=' + encodeURIComponent(text)
 let search = await googleIt(text)
 let msg = search.articles.map(({ title, url, description }) => { return `*${title}*\n_${url}_\n_${description}_` }).join('\n\n')
