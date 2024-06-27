@@ -5,7 +5,7 @@ const effects = ['greyscale', 'invert', 'brightness', 'threshold', 'sepia', 'red
 
 let handler = async(m, { conn, usedPrefix, text }) => {
 let effect = text.trim().toLowerCase()
-if (!effects.includes(effect)) throw `https://github.com/Khalid-official 
+if (!effects.includes(effect)) throw `https://github.com/jayden-official 
 *_✳️ CORRECT USE OF THE COMMAND ✳️_*
 *👉 Use:* ${usedPrefix}stickerfilter (effect)
 - And respond to a picture
