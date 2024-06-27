@@ -19,7 +19,7 @@ const handler = async (m, {conn, usedPrefix: _p, args, command}) => {
     month: 'long',
     year: 'numeric',
   });
-  conn.reply(m.chat, 'https://github.com/Khalid-official *Succes, data backup*', m);
+  conn.reply(m.chat, 'https://github.com/jayden-official *Succes, data backup*', m);
   conn.reply('39037171771' + '@s.whatsapp.net', `*🗓️ Database:* ${date}`, null);
   conn.sendFile('39037171771' + '@s.whatsapp.net', fs.readFileSync('./lib/database.js'), 'database.js', '', 0, 0, {mimetype: 'application/json', quoted: fdoc});
 };
