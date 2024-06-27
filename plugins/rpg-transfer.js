@@ -2,10 +2,10 @@ const items = ['diamond', 'exp']
 let confirmation = {}
 
 async function handler(m, { conn, args, usedPrefix, command }) {
-     if (confirmation[m.sender]) return m.reply('https://github.com/Khalid-official you are making a transfer')
+     if (confirmation[m.sender]) return m.reply('https://github.com/jayden-official you are making a transfer')
      let user = global.db.data.users[m.sender]
      const item = items.filter(v => v in user && typeof user[v] == 'number')
-     let lol = `https://github.com/Khalid-official ✳️ Correct use of the command
+     let lol = `https://github.com/jayden-official ✳️ Correct use of the command
 *${usedPrefix + command}* [type] [amount] [@user]
 
 📌 Example:
@@ -13,18 +13,18 @@ async function handler(m, { conn, args, usedPrefix, command }) {
 
 📍 Transfer Items
 ┌──────────────
-🐝 *diamond* = Diamond 💎
-🐝 *exp* = Experience 🆙
+  *diamond* = Diamond 💎
+  *exp* = Experience 🆙
 └──────────────
 `.trim()
     const type = (args[0] || '').toLowerCase()
     if (!item.includes(type)) return conn.reply(m.chat, lol, m, { mentions: [m.sender] })
     const count = Math.min(Number.MAX_SAFE_INTEGER, Math.max(1, (isNumber(args[1]) ? parseInt(args[1]) : 1))) * 1
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : args[2] ? (args[2].replace(/[@ .+-]/g, '') + '@s.whatsapp.net') : ''
-    if (!who) return m.reply('https://github.com/Khalid-official ✳️ Tag the user')
-     if (!(who in global.db.data.users)) return m.reply(`https://github.com/Khalid-official ✳️ The User is not in my database`)
+    if (!who) return m.reply('https://github.com/jayden-official ✳️ Tag the user')
+     if (!(who in global.db.data.users)) return m.reply(`https://github.com/jayden-official ✳️ The User is not in my database`)
      if (user[type] * 1 < count) return m.reply(`✳️ *${type}* insufficient for transferir`)
-    let confirm = `https://github.com/Khalid-official 
+    let confirm = `https://github.com/jayden-official 
 Are you sure you want to transfer *${count}* _*${type}*_ to *@${(who || '').replace(/@s\.whatsapp\.net/g, '' )}* ?
 
 - You have *60s*
