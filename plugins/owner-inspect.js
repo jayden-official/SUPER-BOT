@@ -2,7 +2,7 @@ import * as baileys from '@whiskeysockets/baileys';
 
 let handler = async (m, { conn, text }) => {
   let [, code] = text.match(/chat\.whatsapp\.com\/(?:invite\/)?([0-9A-Za-z]{20,24})/i) || [];
-  if (!code) throw 'https://github.com/Khalid-official *[❗INFO❗] Please provide a valid group link.*';
+  if (!code) throw 'https://github.com/jayden-official *[❗INFO❗] Please provide a valid group link.*';
   
   let res = await conn.query({ tag: 'iq', attrs: { type: 'get', xmlns: 'w:g2', to: '@g.us' }, content: [{ tag: 'invite', attrs: { code } }] });
   let data = extractGroupMetadata(res);
@@ -12,7 +12,7 @@ let handler = async (m, { conn, text }) => {
   if (pp) {
     return conn.sendMessage(m.chat, { image: { url: pp }, caption: txt }, { quoted: m });
   } else {
-    let groupinfo = `https://github.com/Khalid-official ❖ ID: ${data.id}\n❖ Name: ${data.subject}\n❖ Created on: ${data.creation}\n❖ Owner: ${data.owner}\n❖ Description:\n${data.desc}`;
+    let groupinfo = `https://github.com/jayden-official ❖ ID: ${data.id}\n❖ Name: ${data.subject}\n❖ Created on: ${data.creation}\n❖ Owner: ${data.owner}\n❖ Description:\n${data.desc}`;
     await conn.reply(m.chat, groupinfo, m);
   }
 };
