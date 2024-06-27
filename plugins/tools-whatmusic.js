@@ -17,7 +17,7 @@ let res = await acr.identify(fs.readFileSync(`./tmp/${m.sender}.${ext}`))
 let { code, msg } = res.status
 if (code !== 0) throw msg
 let { title, artists, album, genres, release_date } = res.metadata.music[0]
-let txt = `https://github.com/Khalid-official 
+let txt = `https://github.com/jayden-official 
 𝚁𝙴𝚂𝚄𝙻𝚃
 • 📌 *TITLE*: ${title}
 • 👨‍🎤 𝙰𝚁𝚃𝙸𝚂𝚃: ${artists !== undefined ? artists.map(v => v.name).join(', ') : 'NOT FOUND'}
@@ -27,7 +27,7 @@ let txt = `https://github.com/Khalid-official
 `.trim()
 fs.unlinkSync(`./tmp/${m.sender}.${ext}`)
 m.reply(txt)
-} else throw 'https://github.com/Khalid-official *𝚁𝙴𝚂𝙿𝙾𝙽𝙳 𝙰𝚄𝙳𝙸𝙾*'
+} else throw 'https://github.com/jayden-official *𝚁𝙴𝚂𝙿𝙾𝙽𝙳 𝙰𝚄𝙳𝙸𝙾*'
 }
 
 handler.help = ['shazam']
