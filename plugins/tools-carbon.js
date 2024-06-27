@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args }) => {
   if (!args[0]) {
-    return conn.reply(m.chat, 'https://github.com/Khalid-official Please provide some text to generate the code image.', m)
+    return conn.reply(m.chat, 'https://github.com/jayden-official Please provide some text to generate the code image.', m)
   }
 
   let codeText = args.join(' ')
