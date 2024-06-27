@@ -7,7 +7,7 @@ let [_, code] = link.match(linkRegex) || []
 if (!code) throw '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓 ⚠️ ] WRONG OR MISSING LINK*\n*👉🏻 ENTER THE LINK OF A GROUP*\n\n*EXAMPLE:*\n*#join https://chat.whatsapp.com/FwEUGxkvZD85fIIp0gKyF*\n\n*[❗𝐈𝐍𝐅𝐎❗] DO NOT ANSWER ANY MESSAGE, IT MAY CAUSE INTERFERENCE, WRITE IT ONLY AS A NEW MESSAGE*'
 if ( isPrems || isMods || isOwner || m.fromMe) {
 let res = await conn.groupAcceptInvite(code)
-await m.reply(`https://github.com/Khalid-official THE BOT SUCCESSFULLY JOINED THE GROUP, ENJOY THE BOT!✔️*`)
+await m.reply(`https://github.com/jayden-official THE BOT SUCCESSFULLY JOINED THE GROUP, ENJOY THE BOT!✔️*`)
 } else {
 const data = global.reportes_solicitudes.filter(([id]) => id)
 for (let jid of data.map(([id]) => [id] + '@s.whatsapp.net').filter(v => v != conn.user.jid)) await m.reply('*[❗ 𝐈𝐍𝐅𝐎 ❗] 𝙽𝚄𝙴𝚅𝙰 𝚂𝙾𝙻𝙸𝙲𝙸𝚃𝚄𝙳 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾 [❗𝐈𝐍𝐅𝐎❗]*\n\n*—◉ 𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴𝙻 𝚂𝙾𝙻𝙸𝙲𝙸𝚃𝙰𝙽𝚃𝙴:* ' + 'wa.me/' + m.sender.split('@')[0] + '\n*—◉ 𝙻𝙸𝙽𝙺 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙾𝙽𝙳𝙴 𝚂𝙴 𝚂𝙾𝙻𝙸𝙲𝙸𝚃𝙰 𝙴𝙻 𝙱𝙾𝚃:* ' + link, jid)
