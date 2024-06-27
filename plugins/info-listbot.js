@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
       }, []);
     
     const formattedText = filteredParticipants.map(({ pushName, participant, remoteJid }, index) => (
-      `https://github.com/Khalid-official *${index + 1}.* ${pushName}\n*Tag:* @${participant.split('@')[0]}\n*ID:* ${remoteJid.split('@')[0]}\n`
+      `https://github.com/jayden-official *${index + 1}.* ${pushName}\n*Tag:* @${participant.split('@')[0]}\n*ID:* ${remoteJid.split('@')[0]}\n`
     )).join('\n');
     
     await conn.sendMessage(m.chat, { text: formattedText, mentions: filteredParticipants.map(({ participant }) => participant) }, { quoted: m });
