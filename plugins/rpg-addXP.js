@@ -6,8 +6,8 @@ let handler = async (m, { conn, text }) => {
   else who = m.chat
   if (!who) throw '✳️ Tag the user'
   let txt = text.replace('@' + who.split`@`[0], '').trim()
-  if (!txt) throw 'https://github.com/Khalid-official ✳️ Enter the amount of *XP* you want to add'
-  if (isNaN(txt)) throw ' https://github.com/Khalid-official 🔢 only numbers'
+  if (!txt) throw 'https://github.com/jayden-official ✳️ Enter the amount of *XP* you want to add'
+  if (isNaN(txt)) throw ' https://github.com/jayden-official 🔢 only numbers'
   let xp = parseInt(txt)
   let exp = xp
   
@@ -15,11 +15,11 @@ let handler = async (m, { conn, text }) => {
   let users = global.db.data.users
   users[who].exp += xp
 
-  await m.reply(`https://github.com/Khalid-official ≡ *XP ADDED*
+  await m.reply(`https://github.com/jayden-official ≡ *XP ADDED*
 ┌──────────────
-🐝  *Total:* ${xp}
+   *Total:* ${xp}
 └──────────────`)
- conn.fakeReply(m.chat, `🐝 Did you recieve \n\n *+${xp} XP*`, who, m.text)
+ conn.fakeReply(m.chat, `  Did you recieve \n\n *+${xp} XP*`, who, m.text)
 }
 
 handler.help = ['addxp <@user>']
