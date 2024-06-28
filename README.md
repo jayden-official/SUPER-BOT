@@ -23,7 +23,7 @@ SUPER BOT Multi Device is a whatsapp bot created by <a href="https://github.com/
 - FORK THE REPOSITORY [Here](https://github.com/jayden-official/SUPER-BOT/fork)
 
 ## ☪️ `SUPER PAIRING CODE`
-[![Deadpool](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@confrontermfisa/Deadpool-PairCode-4?s=app)
+[![Deadpool](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@confrontermfisa/SUPERBOT-PairCode-4?s=app)
 
 
 # 🐸```Deployment🖤```
