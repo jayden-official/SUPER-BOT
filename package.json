@@ -1,5 +1,5 @@
 {
-  "name": "BUMBLEBEEBOT",
+  "name": "SUPERBOT",
   "version": "1.0.0",
   "description": "If you like it, give a star",
   "main": "index.js",
@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Khalid-official",
+  "homepage": "https://github.com/jayden-officia/SUPER-BOT",
   "author": {
-    "name": "KhalidOffical"
+    "name": "JaydenOffical"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Khalid-official"
+    "url": "https://github.com/jayden-official"
   },
   "bugs": {
-    "url": "https://github.com/Khalid-official"
+    "url": "https://github.com/jayden-official"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
