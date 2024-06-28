@@ -1,76 +1,87 @@
- 
-<p align="center"> 
-<img src="https://komarev.com/ghpvc/?username=khalid-official&color=brightgreen" />
+<h1 align="center"> ☪️SUPER BOT☪️ <br></h1>
+<p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=602&pause=1000&color=F70000&random=false&width=435&lines=SUPER-BOT+made+by+Jayden&Frank+;Follow+me+IG+%40confronter._" alt="Typing SVG" /></a>
+  
+  <img src="https://telegra.ph/file/0d4f06d19062a2ce8cafd.jpg" />
+</p>
 
 <p align="center">
-    <a href="https://ibb.co/N6NMDtn"><img src="https://telegra.ph/file/a1fd461c49539f754af23.jpg" alt="01" border="0" /></a>
-<p/>
-<p align="center">
-<a href="https://github.com/khalid-official"><img title="Author" src="https://img.shields.io/badge/BUMBLEBEE-BOT-black?style=for-the-badge&logo=whatsApp"></a>
-<p/>
-<p align="center">
-<a href="https://github.com/khalid-official?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/khalid-official?label=Followers&style=social"></a>
-<a href="https://github.com/khalid-official/BUMBLEBEE-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/khalid-official/BUMBLEBEE-BOT?&style=social"></a>
-<a href="https://github.com/khalid-official/BUMBLEBEE-BOT/network/members"><img title="Fork" src="https://img.shields.io/github/forks/khalid-official/BUMBLEBEE-BOT?style=social"></a>
-<a href="https://github.com/khalid-official/BUMBLEBEE-BOT/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/khalid-official/BUMBLEBEE-BOT?label=Watching&style=social"></a>
+SUPER BOT Multi Device is a whatsapp bot created by <a href="https://github.com/Confronter" target="_blank">JAYDEN&FRANK</a> . Star the repo with courage 🌟.
 </p>
 
 
 
-<h3 align="center">WHATSAPP BOT</h3>
+## ✳️```SUPER Group ❌ Channel ✳️```
 
-***
-### Information
-- Change creds.json file replace with yours in [creds.json](https://github.com/Khalid-official/BUMBLEBEE-BOT/edit/main/BumbleSession/creds.json)
-- You can download to the latest version of baileys by editing the package.json [this section](https://github.com/khalid-official/BUMBLEBEE-BOT/blob/main/package.json#L42)
+- [ GROUP ](https://chat.whatsapp.com/Cl7CwM1UC9YEOWEiCzLAfe)
+- [Channel](https://whatsapp.com/channel/0029Vag3MeuGJP8LZb1Okj39)
 
-### FREE APIKEY
--  [click here](https://api.fgmods.xyz)
+## ♻️♻️MADE BY 𝙹𝙰𝚈𝙳𝙴𝙽 🪓𝙲𝙾𝙽𝙵𝚁𝙾𝙽𝚃𝙴𝚁
 
-### For example
-In case of doubt, before installing BUMBLEBEE-BOT, test the bot here
+# ✴️```Must fork the repository📲```
 
-[![WhatsApp](https://img.shields.io/badge/BUMBLEBEE-BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://linkbio.co/6032406az4dFk) 
+- FORK THE REPOSITORY [Here](https://github.com/jayden-official/SUPER-BOT/fork)
 
-***
+##☪️ `SUPER PAIRING CODE`
+[![Deadpool](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@confrontermfisa/Deadpool-PairCode-4?s=app)
 
-#### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/khalid-official/BUMBLEBEE-BOT)
 
-#### Heroku Buildpack
-|--------|--------|
-| *(https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest)*|
-|  **(https://github.com/DuckyTeam/heroku-buildpack-imagemagick)* |
-
-### TERMUX
-1. 
-```sh
-$ pkg upgrade -y && pkg update -y
-$ pkg install git -y
-$ pkg install nodejs -y
-$ pkg install ffmpeg -y
-$ pkg install imagemagick -y
-$ git clone https://github.com/khalid-official/BUMBLEBEE-BOT
-$ cd BUMBLEBEE-BOT
-$ npm i 
-$ npm start
+# 🐸```Deployment🖤```
+  # 😍Tutorial how to deploy
+[Video Tutorial](https://whatsapp.com/channel/0029Vag3MeuGJP8LZb1Okj39/116)
+## Heroku Buildpack
+```bash
+heroku/nodejs
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 ```
-2. Wait for the bot to start...
-3. Scan the QR code from the second device. (go to whatsapp > Linked Devices > Link a device)
----------
+*Add your Creds.json to Bumblebee file
+* Create a new app at [Heroku](heroku.com)
+* Add Build packs
+* Connect your heroku with your github
+* Locate SUPER-BOT
+* Now deploy.
+* Start the Worker
+* Enjoy the Bot.
+```
+```
+## 💀For Termux/Ssh/Ubuntu
+```bash
+apt update
+apt upgrade
+pkg update && pkg upgrade
+pkg install bash
+pkg install libwebp
+pkg install git -y
+pkg install nodejs -y 
+pkg install ffmpeg -y 
+pkg install wget
+pkg install imagemagick -y
+git clone https://github.com/Confronter/Deadpool-Md
+cd Deadpool-Md
+yarn install
+npm start
+```
+## 💀For VPS
+```bash
+apt install nodejs 
+apt install git 
+apt apt install ffmpeg 
+apt apt install libwebp 
+apt apt install imagrmagick
+apt install bash
+git clone https://github.com/Confronter/Deadpool-Md
+cd Deadpool-Md
+npm start
+```
+## 💀For 24/7 Activation (Termux)
+```
+npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
+```
 
+## 💀Developer
 
-## BOXMINE
-
-<a href="https://dash.boxmineworld.com/register?ref=Mb0BN5ny"><img src="https://k.top4top.io/p_2413wh2bh0.jpg" width="450" height="230" alt="BoxMine"/></a>
-
-Install the bot with a single click! so that it is active 24/7
-
----------
-* Create an account [`here`](https://dash.boxmineworld.com/register?ref=Mb0BN5ny)
-* Tutorial [`Click Here`](https://youtu.be/xFqjKN1Qt80)
-
-* Dashboard [`Click here`](https://dash.boxmineworld.com)
-* Panel [`Click here`](https://panel.boxmineworld.com/)
-
----------
+  - [**Follow Instagram**](https://instagram.com/confronter._)
+- [**WhatsApp Me**](https://wa.me/254796283064)
+## THANKS✝️💛
+  
