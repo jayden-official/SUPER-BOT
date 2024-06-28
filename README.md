@@ -38,7 +38,6 @@ In case of doubt, before installing BUMBLEBEE-BOT, test the bot here
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/khalid-official/BUMBLEBEE-BOT)
 
 #### Heroku Buildpack
-| BuildPack | LINK |
 |--------|--------|
 | **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
