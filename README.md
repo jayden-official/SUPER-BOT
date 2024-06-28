@@ -39,8 +39,8 @@ In case of doubt, before installing BUMBLEBEE-BOT, test the bot here
 
 #### Heroku Buildpack
 |--------|--------|
-| **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+| *(https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest)*|
+|  **(https://github.com/DuckyTeam/heroku-buildpack-imagemagick)* |
 
 ### TERMUX
 1. 
