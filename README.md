@@ -1,6 +1,6 @@
 <h1 align="center"> ☪️SUPER BOT☪️ <br></h1>
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=602&pause=1000&color=F70000&random=false&width=435&lines=SUPER-BOT+made+by+Jayden&Frank+;Follow+me+IG+%40confronter._" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=602&pause=1000&color=F70000&random=false&width=435&lines=SUPER-BOT+made+by+Jayden+Frank+;Follow+me+IG+%40confronter._" alt="Typing SVG" /></a>
   
   <img src="https://telegra.ph/file/0d4f06d19062a2ce8cafd.jpg" />
 </p>
