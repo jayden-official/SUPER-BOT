@@ -11,21 +11,21 @@ global.botnumber = "254111728536"
 global.confirmcode = ""
 
 global.owner = [
-  ['254736958034', '👑 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐎𝐑👑', true],
-  ['254114098508', '💫𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓💫', true],
-  ['254787002739', '💫𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 💫', true],
-  ['923470027813', '💫 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓💫', true],
-  ['254102300454', '💫 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓💫', true],
+  ['254794597254', '𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐎𝐑👑', true],
+  ['254786827982', '💫𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
+  ['254794597254', '💫𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 💫', true],
+  ['923470027813', '💫 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
+  ['254786827982', '💫 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
 ];
 
-global.suittag = ['254114098508'];
-global.prems = ['254114098508'];
+global.suittag = ['254794597254'];
+global.prems = ['254794597254'];
 
-global.packname = '𒁂⃝ᰲ𝐊𝐇𝐀𝐋𝐈𝐃©_🇨🇺⃝𝐌𝚯𝐃͢𝐙™ ͟͞';
-global.author = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.wm = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.igfg = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.wait = '*[❗] 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.packname = 'ĴΔ¥Đ€Ň ƤΔƤƗƗ';
+global.author = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
+global.wm = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
+global.igfg = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
+global.wait = '*[❗] 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -45,15 +45,15 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓`;
-global.gt = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.mysticbot = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.md = 'https://github.com/Khalid-niccur';
-global.mysticbot = 'https://github.com/Khalid-niccur';
-global.waitt = '*[❗] 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
-global.waittt = '*[❗]𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
-global.waitttt = '*[❗]𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
-global.nomorown = '254736958034';
+global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓`;
+global.gt = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
+global.mysticbot = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
+global.md = 'https://github.com/jayden-official';
+global.mysticbot = 'https://github.com/jayden-official';
+global.waitt = '*[❗] 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.waittt = '*[❗]𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.waitttt = '*[❗]𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.nomorown = '254794597254';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
