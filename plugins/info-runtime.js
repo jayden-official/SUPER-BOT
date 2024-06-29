@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let muptime = clockString(_muptime)
    m.reply(`╭────[ *𝘀𝘂𝗽𝗲𝗿 𝗯𝗼𝘁* ]
 │🏮💛Bot active duration💛🏮
-│ 𝐆𝐈𝐓𝐇𝐔𝐁 https://github.com/jayden-official 
+│ 𝔪𝔬𝔱𝔥𝔢𝔯𝔣𝔲𝔠𝔨𝔢𝔯 𝔣𝔬𝔩𝔩𝔬𝔴: https://whatsapp.com/channel/0029Vag3MeuGJP8LZb1Okj39
 │ 𝐂𝐑𝐄𝐀𝐓𝐎𝐑: 𝐣𝐚𝐲𝐝𝐞𝐧 𝐭𝐞𝐜𝐡
 │ 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐍𝐔𝐌𝐁𝐄𝐑= wa.me/254794597254
 ╰────────────────\n\n${muptime}`) 
