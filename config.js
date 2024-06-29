@@ -7,11 +7,14 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
+global.botnumber = "254111728536"
+global.confirmcode = ""
+
 global.owner = [
   ['254794597254', '👑 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐎𝐑👑', true],
   ['254794597254', '💫𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
   ['254786827982', '💫𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 💫', true],
-  ['923470027813', '💫 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
+  ['254796283064', '💫 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
   ['254743776612', '💫 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
 ];
 
