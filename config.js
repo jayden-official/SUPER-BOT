@@ -7,21 +7,18 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-global.botnumber = "254794597254"
-global.confirmcode = ""
-
 global.owner = [
-  ['254794597254', '𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐎𝐑👑', true],
-  ['254786827982', '💫𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
-  ['254794597254', '💫𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 💫', true],
+  ['254794597254', '👑 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐎𝐑👑', true],
+  ['254794597254', '💫𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
+  ['254786827982', '💫𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 💫', true],
   ['923470027813', '💫 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
-  ['254786827982', '💫 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
+  ['254743776612', '💫 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓💫', true],
 ];
 
 global.suittag = ['254794597254'];
 global.prems = ['254794597254'];
 
-global.packname = 'ĴΔ¥Đ€Ň ƤΔƤƗƗ';
+global.packname = '𒁂⃝ᰲĴΔ¥Đ€Ň ƤΔƤƗƗ™ ͟͞';
 global.author = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
 global.wm = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
 global.igfg = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
@@ -51,7 +48,7 @@ global.mysticbot = '★𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓★';
 global.md = 'https://github.com/jayden-official';
 global.mysticbot = 'https://github.com/jayden-official';
 global.waitt = '*[❗] 𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
-global.waittt = '*[❗]𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.waittt = '*[❗]𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
 global.waitttt = '*[❗]𝐒𝐔𝐏𝐄𝐑 𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
 global.nomorown = '254794597254';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
@@ -87,3 +84,4 @@ watchFile(file, () => {
   console.log(chalk.redBright('Update \'config.js\''));
   import(`${file}?update=${Date.now()}`);
 });
+
