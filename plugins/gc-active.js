@@ -5,7 +5,7 @@ import {canLevelUp, xpRange} from '../lib/levelling.js';
 
 const handler = async (m, {conn, usedPrefix, command}) => {
   const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
-  if (!(who in global.db.data.users)) throw `https://github.com/Khalid-official *The user still has to write a message*`;
+  if (!(who in global.db.data.users)) throw `https://github.com/jayden-official *The user still has to write a message*`;
   const pp = await conn.profilePictureUrl(who, 'image').catch((_) => './src/avatar_contact.png');
   const user = global.db.data.users[who];
   const {name, exp, messaggi, lastclaim, registered, regTime, age, level, role, warn} = global.db.data.users[who];
