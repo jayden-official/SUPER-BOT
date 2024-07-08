@@ -65,8 +65,8 @@ apt apt install ffmpeg
 apt apt install libwebp 
 apt apt install imagrmagick
 apt install bash
-git clone https://github.com/Confronter/Deadpool-Md
-cd Deadpool-Md
+git clone https://github.com/jayden/SUPER-BOT
+cd SUPER-BOT
 npm start
 ```
 ## ☯️For 24/7 Activation (Termux)
